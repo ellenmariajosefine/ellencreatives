@@ -1,0 +1,240 @@
+
+@font-face {
+    font-family: Platform-Regular;
+    src: url(../FONTS/Platform/Platform-Regular.woff);
+  }
+
+  @font-face {
+    font-family: Platform-Medium;
+    src: url(../FONTS/Platform/Platform-Medium.woff);
+    font-weight: Medium;
+  }
+
+  @font-face {
+    font-family: Platform-Bold;
+    src: url(../FONTS/Platform/Platform-Bold.woff);
+    font-weight: Bold
+  }
+
+:root {
+    --black: #333;
+    --white: #fff;
+    --light-gray: #fafafa;
+    --yellow: #FFC062;
+    --petrol: #4B9AAB;
+    --CTA: #5C5C5C;
+    --secondary: #858585;
+    font-size: 16px;
+  }
+
+body {
+    background-color: white;
+}
+
+
+.btn, .CTA  {
+    padding: 12px 32px;
+    border-radius: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.CTA  {
+    background-color: var(--CTA);
+    border: 1px solid var(--CTA);
+    margin-right: 16px;
+}
+
+.btn {
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    margin-left: 16px;
+}
+
+.header-container {
+    width: 100vw;
+    position: fixed;
+    top: 0px;
+    left:0px;
+    background-color: var(--light-gray)
+}
+
+.nav-wrapper {
+    margin:16px 100px;
+    height: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: center;
+}
+
+#nav-wordmark {
+    height: 40px;
+    margin-right: auto;
+}
+
+ .nav-link  {
+    font-size: 1.2rem;
+    font-family:  "Platform-Bold";
+    margin-left: 32px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--yellow);
+}
+
+.hero-section {
+   margin: 150px auto;
+   display: flex; 
+   flex-flow: column wrap;
+   justify-content: center;
+   align-items: center;
+}
+
+.hero-section h1 {
+    line-height: 100%;
+    text-align: center;
+}
+
+.bg-lightgray {
+    background-color: var(--light-gray);
+    height: 80vh;
+}
+
+.hero-img {
+    height: 200px;
+} 
+
+ .btn-floater  {
+    width: 80%;
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 32px auto;
+}
+
+ .services-section {
+    display: flex; 
+    flex-flow: column wrap;
+    padding: 32px;
+}
+
+.services-section h2, p {
+    text-align: center;
+}
+
+
+ .services {
+     width: 80vw;
+     margin: 32px auto;
+     display: flex; 
+     flex-flow: row wrap;
+     justify-content: space-between;
+     align-items: center; 
+}
+
+ .services-card {
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 8px;
+}
+
+ .services-img {
+    height: 200px;
+}
+
+.card-title {
+    text-align: center;
+    line-height: 100%;
+    margin-top: 16px;
+}
+
+.description {
+    margin: 8px 16px 8px 16px;
+}
+
+.card-text-link  {
+    text-align: center;
+    font-size: 16px;
+    font-family: "Platform-Bold";
+    color: var(--black);
+    text-decoration: none;   
+}
+
+.card-text-link:hover {
+    color: var(--yellow);
+}
+
+.about-section {
+    width: 100vw;
+    display: flex;
+    flex-flow: row wrap;
+    height: 600px;
+}
+
+.left-container {
+    width: 45vw;
+    background-color: #D6D6D6;
+}
+
+.about-img {
+    width: 30vw;
+    margin: 32px auto;
+}
+
+.right-container  {
+    width: 45vw;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex; 
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: left;
+}
+
+.right-container h2, h3, p {
+    text-align: left; 
+}
+
+#about-btn {
+    width: 200px;
+}
+
+.contact-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    width: 100vw;
+    margin: 32px 50px 32px 100px;
+}
+
+.footer-title {
+    text-align: right;
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 1.2rem;
+    font-family:  "Platform-Bold";
+    margin-left: 32px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.footer-link {
+    text-align: left;
+    margin-right: 16px;
+    font-size: 1rem;
+    font-family:  "Platform-Regular";
+    color: var(--black);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--yellow);
+}
