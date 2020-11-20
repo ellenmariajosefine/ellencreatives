@@ -3,19 +3,22 @@
 @font-face {
     font-family: Platform-Regular;
     src: url(../FONTS/Platform/Platform-Regular.woff);
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: Platform-Medium;
     src: url(../FONTS/Platform/Platform-Medium.woff);
     font-weight: Medium;
-  }
+}
 
-  @font-face {
+@font-face {
     font-family: Platform-Bold;
     src: url(../FONTS/Platform/Platform-Bold.woff);
     font-weight: Bold
-  }
+}
+
+html {box-sizing: border-box;}
+
 
 :root {
     --black: #333;
@@ -26,22 +29,23 @@
     --CTA: #5C5C5C;
     --secondary: #858585;
     font-size: 16px;
-  }
+}
 
 body {
     background-color: white;
+    width: 100vw;
 }
 
 .header-container {
     width: 100vw;
     position: fixed;
     top: 0px;
-    left:0px;
-    background-color: var(--light-gray)
+    left: 0px;
+    background-color: var(--petrol)
 }
 
 .nav-wrapper {
-    margin:16px 100px;
+    margin: 16px 100px;
     height: 40px;
     display: flex;
     flex-flow: row wrap;
@@ -54,9 +58,9 @@ body {
     margin-right: auto;
 }
 
- .nav-link  {
+.nav-link {
     font-size: 1.2rem;
-    font-family:  "Platform-Bold";
+    font-family: "Platform-Bold";
     margin-left: 32px;
     color: var(--black);
     text-decoration: none;
@@ -65,7 +69,6 @@ body {
 .nav-link:hover {
     color: var(--yellow);
 }
-
 
 .contact-footer {
     display: flex;
@@ -81,7 +84,7 @@ body {
     margin-right: 16px;
     margin-left: 16px;
     font-size: 1.2rem;
-    font-family:  "Platform-Bold";
+    font-family: "Platform-Bold";
     margin-left: 32px;
     color: var(--black);
     text-decoration: none;
@@ -91,7 +94,7 @@ body {
     text-align: left;
     margin-right: 16px;
     font-size: 1rem;
-    font-family:  "Platform-Regular";
+    font-family: "Platform-Regular";
     color: var(--black);
     text-decoration: none;
 }
@@ -102,7 +105,7 @@ body {
 
 /*  Home specific styling  */
 
-.btn, .CTA  {
+.btn, .CTA {
     padding: 12px 32px;
     border-radius: 40px;
     font-family: "Open Sans", sans-serif;
@@ -112,7 +115,7 @@ body {
     color: white;
 }
 
-.CTA  {
+.CTA {
     background-color: var(--CTA);
     border: 1px solid var(--CTA);
     margin-right: 16px;
@@ -125,11 +128,11 @@ body {
 }
 
 .hero-section {
-   margin: 150px auto;
-   display: flex; 
-   flex-flow: column wrap;
-   justify-content: center;
-   align-items: center;
+    margin: 150px auto;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .hero-section h1 {
@@ -144,18 +147,18 @@ body {
 
 .hero-img {
     height: 200px;
-} 
+}
 
- .btn-floater  {
+.btn-floater {
     width: 80%;
-    display: flex; 
+    display: flex;
     flex-flow: row wrap;
     justify-content: center;
     margin: 32px auto;
 }
 
- .services-section {
-    display: flex; 
+.services-section {
+    display: flex;
     flex-flow: column wrap;
     padding: 32px;
 }
@@ -164,24 +167,23 @@ body {
     text-align: center;
 }
 
-
- .services {
-     width: 80vw;
-     margin: 32px auto;
-     display: flex; 
-     flex-flow: row wrap;
-     justify-content: space-between;
-     align-items: center; 
+.services {
+    width: 80vw;
+    margin: 32px auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
- .services-card {
+.services-card {
     width: 30%;
     display: flex;
     flex-flow: column wrap;
     padding: 8px;
 }
 
- .services-img {
+.services-img {
     height: 200px;
 }
 
@@ -195,12 +197,12 @@ body {
     margin: 8px 16px 8px 16px;
 }
 
-.card-text-link  {
+.card-text-link {
     text-align: center;
     font-size: 16px;
     font-family: "Platform-Bold";
     color: var(--black);
-    text-decoration: none;   
+    text-decoration: none;
 }
 
 .card-text-link:hover {
@@ -224,24 +226,23 @@ body {
     margin: 32px auto;
 }
 
-.right-container  {
+.right-container {
     width: 45vw;
     padding-left: 5%;
     padding-right: 5%;
-    display: flex; 
+    display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: left;
 }
 
 .right-container h2, h3, p {
-    text-align: left; 
+    text-align: left;
 }
 
 .intro-description {
     text-align: center;
 }
-
 
 #about-btn {
     width: 200px;
@@ -258,105 +259,328 @@ body {
     margin-top: 64px;
 }
 
-
 .filter-section {
-padding: 48px 100px;
-display: flex;
-flex-flow: row wrap;
-justify-content: center;
-align-items: center;
+    padding: 48px 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .filter-group {
-padding: 12px 32px;
-border-radius: 40px;
-font-family: "Open Sans", sans-serif;
-font-weight: bold;
-font-size: 0.9rem;
-color: white;
-background-color: var(--CTA);
-border: 1px solid var(--CTA);
-margin: 0px 16px;
+    padding: 12px 32px;
+    border-radius: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    color: white;
+    background-color: var(--CTA);
+    border: 1px solid var(--CTA);
+    margin: 0px 16px;
 }
 
 .cases-section {
-margin: 24px 100px;
-display: flex;
-flex-flow: row wrap;
-justify-content: center;
-align-items: center;
+    margin: 24px 100px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .cases-group {
-width: 340px;
-height: 290px;
-margin: 16px 16px;
-padding: 8px;
-display: flex; 
-flex-flow: column wrap;
-justify-content: center;
-align-items: center;
+    width: 340px;
+    height: 290px;
+    margin: 16px 16px;
+    padding: 8px;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 #case1 {
-background-image: url(../IMG/Placeholders/cases-placeholder.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 #case2 {
-background-image: url(../IMG/Placeholders/cases-placeholder.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 #case3 {
-background-image: url(../IMG/Placeholders/cases-placeholder.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 #case4 {
-background-image: url(../IMG/Placeholders/cases-placeholder.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 #case5 {
-background-image: url(../IMG/Placeholders/cases-placeholder.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 #case6 {
-background-image: url(../IMG/Placeholders/cases-placeholder.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 #case7 {
-background-image: url(../IMG/Placeholders/cases-placeholder.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 #case8 {
-background-image: url(../IMG/Placeholders/cases-placeholder.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+
 #case9 {
-background-image: url(../IMG/Placeholders/cases-placeholder.png);
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
+    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
+/*Case-overview specific styling */
 
-/* <div class="cases-section">
-                <div class="cases-group" id="case1">
-                    <img src="./IMG/Placeholders/Picture-placeholder.png" alt="" class="cases">
-                    <h3 class="case-headline">This is a case</h3>
-                    <p class="case-descr">This is a short text about the case</p>
-                    <a href="#" class="case-text-link">Check it out</a> */
+.case-hero {
+    margin-top: 72px;
+    height: 510px;
+    width: 1440px;
+    background-image: url(../IMG/Placeholders/Picture-placeholder.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.case-hero-text h2, h4, p {
+    text-align: left;
+}
+
+.case-hero-text {
+    margin-left: 200px;
+}
+
+.case-index {
+    padding: 32px 200px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.index-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.index {
+    margin: 0px;
+    line-height: 150%;
+}
+
+.case-summary, .case-visuals, .case-output {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 64px 0px;
+    background-color: var(--light-gray);
+}
+
+.left-container-20-80 {
+    width: 310px;
+    height: 290px;
+}
+
+.chapter-title {
+    text-align: left;
+    margin: 0px 0px 0px 200px;
+    float: left;
+    line-height: 100%;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-family: "Open Sans";
+    font-weight: bold;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+.right-container-80-20 {
+    width: 900px;
+    padding: 0px 48px 0px 48px;
+}
+
+.right-container-80-20 h3 {
+    line-height: 2rem;
+}
+
+.btn-skip {
+    padding: 12px 32px;
+    border-radius: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    color: white;
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    margin-top: 16px;
+    margin-bottom: 24px;
+}
+
+.case-visuals {
+    background-color: var(--white);
+}
+
+.typography-section, .colors, .images-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.color-representation {
+    width: 170px;
+    margin-right: 100px;
+}
+
+.Visuals-section-title {
+    margin: 24px 0px 24px 0px;
+}
+
+.typography-headlines h3 {
+    font-size: 1.5rem;
+    margin: 0px;
+}
+
+.typography-bread h3 {
+    font-family: "Open Sans";
+    font-weight: normal;
+    font-size: 1.4rem;
+}
+
+.typography-headlines p {
+    font-family: "Platform-bold";
+}
+
+.typography-headlines p, .typography-bread p {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    margin-top: 8px;
+}
+
+.typography-headlines, .typography-bread {
+    width: 400px;
+    margin-right: 32px;
+    margin-bottom: 48px;
+    margin-top: 48px;
+}
+
+.image-tonality {
+    width: 200px;
+    height: 100px;
+    margin-right: 16px;
+}
+
+.case-visuals .left-container-20-80,
+.case-visuals .right-container-80-20 {
+    height: 619.34px;
+}
+
+.case-output-img {
+    height: 290px;
+    margin-top: 24px;
+}
+
+.case-output .left-container-20-80,
+.case-output .right-container-80-20 {
+    height: 522px;
+}
+
+.case-final {
+    width: 1440px;
+    display: flex;
+    flex-flow: row wrap;
+    height: 600px;
+}
+
+.left-img-container {
+    width: 550px;
+    display: flex;
+    flex-flow: column wrap; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.case-final-img {
+    width: 280px;
+    margin: 32px auto;
+}
+
+.case-final .right-container {
+    width: 700px;
+    padding-left: 5%;
+    padding-right: 5%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: left;
+}
+
+.case-final  .right-container h2, h3, p {
+    text-align: left;
+}
+
+.case-final  .intro-description {
+    text-align: center;
+}
+
+.case-final #case-btn {
+    width: 200px;
+}
+
+/*   
+
+<div class="case-final">
+<div class="left-img-container">
+    <img src="IMG/Placeholders/Phone mockup.png" alt="" class="case-final-img">
+</div>
+<div class="right-container">
+    <h2>This is a title</h2>
+    <h3>This is a sub-title</h3>
+    <p>Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <button href="#" class="CTA" id="about-btn">CTA Button</button>
+</div>
+*/
