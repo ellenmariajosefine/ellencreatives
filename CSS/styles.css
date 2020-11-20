@@ -32,30 +32,6 @@ body {
     background-color: white;
 }
 
-/*  Home specific styling  */
-
-.btn, .CTA  {
-    padding: 12px 32px;
-    border-radius: 40px;
-    font-family: "Open Sans", sans-serif;
-    font-weight: bold;
-    font-size: 1rem;
-    text-transform: uppercase;
-    color: white;
-}
-
-.CTA  {
-    background-color: var(--CTA);
-    border: 1px solid var(--CTA);
-    margin-right: 16px;
-}
-
-.btn {
-    background-color: var(--secondary);
-    border: 1px solid var(--secondary);
-    margin-left: 16px;
-}
-
 .header-container {
     width: 100vw;
     position: fixed;
@@ -88,6 +64,64 @@ body {
 
 .nav-link:hover {
     color: var(--yellow);
+}
+
+
+.contact-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    width: 100vw;
+    margin: 32px 50px 32px 100px;
+}
+
+.footer-title {
+    text-align: right;
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 1.2rem;
+    font-family:  "Platform-Bold";
+    margin-left: 32px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.footer-link {
+    text-align: left;
+    margin-right: 16px;
+    font-size: 1rem;
+    font-family:  "Platform-Regular";
+    color: var(--black);
+    text-decoration: none;
+}
+
+.footer-link:hover {
+    color: var(--yellow);
+}
+
+/*  Home specific styling  */
+
+.btn, .CTA  {
+    padding: 12px 32px;
+    border-radius: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: white;
+}
+
+.CTA  {
+    background-color: var(--CTA);
+    border: 1px solid var(--CTA);
+    margin-right: 16px;
+}
+
+.btn {
+    background-color: var(--secondary);
+    border: 1px solid var(--secondary);
+    margin-left: 16px;
 }
 
 .hero-section {
@@ -213,38 +247,116 @@ body {
     width: 200px;
 }
 
-.contact-footer {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
-    align-items: center;
-    width: 100vw;
-    margin: 32px 50px 32px 100px;
-}
-
-.footer-title {
-    text-align: right;
-    margin-right: 16px;
-    margin-left: 16px;
-    font-size: 1.2rem;
-    font-family:  "Platform-Bold";
-    margin-left: 32px;
-    color: var(--black);
-    text-decoration: none;
-}
-
-.footer-link {
-    text-align: left;
-    margin-right: 16px;
-    font-size: 1rem;
-    font-family:  "Platform-Regular";
-    color: var(--black);
-    text-decoration: none;
-}
-
-.footer-link:hover {
-    color: var(--yellow);
-}
-
 /*  cases specific styling  */
 
+.main-section {
+    padding-top: 72px;
+}
+
+.intro-headline {
+    text-align: center;
+    margin-top: 64px;
+}
+
+
+.filter-section {
+padding: 48px 100px;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+}
+
+.filter-group {
+padding: 12px 32px;
+border-radius: 40px;
+font-family: "Open Sans", sans-serif;
+font-weight: bold;
+font-size: 0.9rem;
+color: white;
+background-color: var(--CTA);
+border: 1px solid var(--CTA);
+margin: 0px 16px;
+}
+
+.cases-section {
+margin: 24px 100px;
+display: flex;
+flex-flow: row wrap;
+justify-content: center;
+align-items: center;
+}
+
+.cases-group {
+width: 340px;
+height: 290px;
+margin: 16px 16px;
+padding: 8px;
+display: flex; 
+flex-flow: column wrap;
+justify-content: center;
+align-items: center;
+}
+
+#case1 {
+background-image: url(../IMG/Placeholders/cases-placeholder.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#case2 {
+background-image: url(../IMG/Placeholders/cases-placeholder.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#case3 {
+background-image: url(../IMG/Placeholders/cases-placeholder.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#case4 {
+background-image: url(../IMG/Placeholders/cases-placeholder.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#case5 {
+background-image: url(../IMG/Placeholders/cases-placeholder.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#case6 {
+background-image: url(../IMG/Placeholders/cases-placeholder.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#case7 {
+background-image: url(../IMG/Placeholders/cases-placeholder.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#case8 {
+background-image: url(../IMG/Placeholders/cases-placeholder.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+#case9 {
+background-image: url(../IMG/Placeholders/cases-placeholder.png);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+
+/* <div class="cases-section">
+                <div class="cases-group" id="case1">
+                    <img src="./IMG/Placeholders/Picture-placeholder.png" alt="" class="cases">
+                    <h3 class="case-headline">This is a case</h3>
+                    <p class="case-descr">This is a short text about the case</p>
+                    <a href="#" class="case-text-link">Check it out</a> */
