@@ -26,6 +26,7 @@ html {
     --black: #333;
     --white: #fff;
     --light-gray: #fafafa;
+    --medium-gray: #EBEBEB;
     --yellow: #FFC062;
     --petrol: #4B9AAB;
     --CTA: #5C5C5C;
@@ -210,7 +211,8 @@ body {
     color: var(--yellow);
 }
 
-.about-section {
+.about-section, 
+[id*=section-] { 
     width: 100vw;
     display: flex;
     flex-flow: row wrap;
@@ -573,3 +575,30 @@ body {
 }
 
 /* About us specific */
+
+.about-sections {
+    margin-top: 72px;
+}
+
+[id*=section-] {
+    height: 716px;
+}
+
+#section-2,
+#section-4 {
+    background-color: var(--light-gray);
+}
+
+#section-2 .left-container, 
+#section-4 .left-container {
+    background-color: var(--medium-gray);
+}
+
+[id*=section-] .left-container {
+    display: flex; 
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    padding: 0px;
+    margin: 0px;
+}
