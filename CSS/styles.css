@@ -39,6 +39,15 @@ body {
     width: 100vw;
 }
 
+iframe {
+    width: 100vw;
+    height: 72px;
+    top: 0px;
+    left:0px;
+    position: fixed;
+    border: 0px solid white;
+}
+
 .header-container {
     width: 100vw;
     position: fixed;
