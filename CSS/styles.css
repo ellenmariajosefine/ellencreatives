@@ -19,6 +19,7 @@
 
 html {
     box-sizing: border-box;
+    width: 100vw;
 }
 
 :root {
@@ -37,8 +38,8 @@ html {
 
 body {
     background-color: white;
-    width: 1400px;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
+    width: 100vw;
 }
 
 .wrapper {
@@ -46,13 +47,14 @@ body {
 }
 
 .header-container {
-    width: 1400px;
+    width: 100vw;
     position: fixed;
     height: 72px;
     top: 0px;
     left: 0px;
     background-color: var(--yellow);
     z-index: 1000;
+    box-sizing: border-box;
 }
 
 
@@ -146,7 +148,7 @@ body {
 }
 
 .hero-section {
-    width: 1400px;
+    width: 100vw;
     margin:0px;
     display: flex;
     flex-flow: column wrap;
@@ -194,7 +196,7 @@ body {
 .about-section, 
 [id*=section-],
 .case-highlight-section { 
-    width: 1400px;
+    width:100vw;
     display: flex;
     flex-flow: row wrap;
     box-sizing: border-box;
@@ -276,24 +278,29 @@ body {
 
 .case-highlight-section .left-container {
     width: 45vw;
-    padding-left: 15%;
-    padding-right: 5%;
+    /* padding-left: 15%;
+    padding-right: 5%; */
     height: 717px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: flex-start;
     box-sizing: border-box;
-    background-color: var(--yellow);
+    box-sizing: border-box;
 }
 
 .case-highlight-section {
     background-color: var(--yellow);
-    width: 1400px;
+    width:100vw;
 }
 
 #case-highlight-2 {
     background-color: var(--petrol)
+}
+
+.slide-content {
+    padding-left: 150px;
+    padding-right: 10px;
 }
 
 .btn-floater-left {
@@ -316,10 +323,11 @@ body {
 
 .case-laptop {
     width: 30px;
-    position: absolute;
+    /* position: absolute;
     right: 0px;
-    top: 70px;
+    top: 70px; */
     width: 500px;
+    float:right;
 }
 
 .case-phone {
@@ -340,8 +348,24 @@ body {
 .slider-slide {
     display: none;
     height: 717px;
-    width: 1400px;
+    width:100vw;
     position: relative;
+}
+
+.slides-container {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.slide-left {
+    margin-left: -1440px;
+}
+
+.slide-right {
+    margin-right: 1440px;
 }
 
 .slider-slide:first-child {
@@ -377,8 +401,8 @@ body {
 
 .right-container {
     width: 508px;
-    padding-left: 70px;
-    padding-right: 70px;
+    /* padding-left: 70px;
+    padding-right: 70px; */
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
