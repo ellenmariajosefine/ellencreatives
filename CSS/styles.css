@@ -48,11 +48,13 @@ body {
 .header-container {
     width: 1400px;
     position: fixed;
+    height: 72px;
     top: 0px;
     left: 0px;
-    background-color: var(--petrol);
+    background-color: var(--yellow);
     z-index: 1000;
 }
+
 
 .nav-wrapper {
     margin: 16px 100px;
@@ -150,8 +152,9 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    background-color: var(--light-gray)
+    background-color: var(--yellow)
 }
+
 
 .full-height {
     height: 717px;
@@ -172,9 +175,9 @@ body {
     background-color: var(--light-yellow);
 }
 
-.bg-yellow-gradient {
+/* .bg-yellow-gradient {
     background-image: var(--yellow-gradient);
-}
+} */
 
 .bg-yellow {
     background-color: var(--yellow);
@@ -194,6 +197,7 @@ body {
     width: 1400px;
     display: flex;
     flex-flow: row wrap;
+    box-sizing: border-box;
 }
 
 .btn-floater {
@@ -274,10 +278,11 @@ body {
     width: 45vw;
     padding-left: 15%;
     padding-right: 5%;
+    height: 717px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    align-items: left;
+    align-items: flex-start;
     box-sizing: border-box;
     background-color: var(--yellow);
 }
@@ -312,7 +317,8 @@ body {
 .case-laptop {
     width: 30px;
     position: absolute;
-    right: 50px;
+    right: 0px;
+    top: 70px;
     width: 500px;
 }
 
@@ -335,6 +341,7 @@ body {
     display: none;
     height: 717px;
     width: 1400px;
+    position: relative;
 }
 
 .slider-slide:first-child {
@@ -359,8 +366,6 @@ body {
     width: 29px;
 }
 
-
-
 .left-container {
     width: 45vw;
 }
@@ -371,17 +376,20 @@ body {
 }
 
 .right-container {
-    width: 45vw;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 508px;
+    padding-left: 70px;
+    padding-right: 70px;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
     align-items: left;
 }
 
-.right-container h2, h3, p {
+.right-container h2, 
+.right-container h3, 
+.right-container p {
     text-align: left;
+    width: 40vw;
 }
 
 .intro-description {
