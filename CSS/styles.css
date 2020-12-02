@@ -280,7 +280,7 @@ body {
     width: 45vw;
     /* padding-left: 15%;
     padding-right: 5%; */
-    height: 717px;
+    height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -295,7 +295,8 @@ body {
 }
 
 #case-highlight-2 {
-    background-color: var(--petrol)
+    background-color: var(--petrol);
+    height: 100vh;
 }
 
 .slide-content {
@@ -342,12 +343,12 @@ body {
 }
 
 .main-slider-container {
-    height: 717px;
+    height: 100vh;
 }
 
 .slider-slide {
-    display: none;
-    height: 717px;
+    /* display: none; */
+    height: 100vh;
     width:100vw;
     position: relative;
 }
@@ -368,9 +369,9 @@ body {
     margin-right: 1440px;
 }
 
-.slider-slide:first-child {
+/* .slider-slide:first-child {
     display: block;
-}
+} */
 
 .navigation {
     position: relative;
@@ -435,7 +436,7 @@ body {
     margin-top: 64px;
 }
 
-.filter-section {
+#filters {
     padding: 48px 100px;
     display: flex;
     flex-flow: row wrap;
@@ -443,27 +444,42 @@ body {
     align-items: center;
 }
 
-.filter-group {
+.filter-btn {
     padding: 12px 32px;
     border-radius: 40px;
     font-family: "Open Sans", sans-serif;
     font-weight: bold;
     font-size: 0.9rem;
-    color: white;
-    background-color: var(--CTA);
-    border: 1px solid var(--CTA);
+    color: var(--petrol);
+    background-color: var(--white);
+    border: 1px solid var(--petrol);
     margin: 0px 16px;
+    cursor: pointer;
+    outline: none;
+}
+
+.filter-btn:hover {
+    background-color: var(--light-blue);
+    border: 1px solid var(--light-blue); 
+    color: var(--white);
+}
+
+.filter-btn.active {
+    background-color: var(--petrol);
+    color: var(--white);
 }
 
 .cases-section {
-    margin: 24px 100px;
+    margin: 24px auto;
+    width: 100vw;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+    box-sizing: border-box;
 }
 
-.cases-group {
+.box {
     width: 340px;
     height: 290px;
     margin: 16px 16px;
@@ -472,69 +488,79 @@ body {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
+    display: none;
 }
 
-#case1 {
-    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+[id*=case] {
+    width: 340px;
+    height: 290px;
+}
+
+#case-1 {
+    background-image: url(../IMG/Cases-thumbnails/Urban-Urban_edited.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#case2 {
-    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+#case-2 {
+    background-image: url(../IMG/Cases-thumbnails/Holofit.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#case3 {
-    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+#case-3 {
+    background-image: url(../IMG/Cases-thumbnails/Mindster.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#case4 {
-    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+#case-4 {
+    background-image: url(../IMG/Cases-thumbnails/Viva-Viva.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#case5 {
-    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+#case-5 {
+    background-image: url(../IMG/Cases-thumbnails/CSN.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#case6 {
-    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+#case-6 {
+    background-image: url(../IMG/Cases-thumbnails/Makeup-factory.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#case7 {
-    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+#case-7 {
+    background-image: url(../IMG/Cases-thumbnails/Mindmapper.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#case8 {
-    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+#case-8 {
+    background-image: url(../IMG/Cases-thumbnails/LuN.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-#case9 {
-    background-image: url(../IMG/Placeholders/cases-placeholder.png);
+#case-9 {
+    background-image: url(../IMG/Cases-thumbnails/Urban-Urban_edited.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.show {
+    display: block; 
 }
 
 /*Case-overview specific styling */

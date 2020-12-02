@@ -95,7 +95,7 @@ function checkScrollDirectionIsUp(event) {
   return event.deltaY < 0;
 } */
 
-const scrollableElement = document.body; 
+/* const scrollableElement = document.body; 
 let currentIndex = 0;
 let slides = document.querySelectorAll(".slider-slide");
 console.log(slides);
@@ -118,7 +118,7 @@ function checkScrollDirectionIsUp(event) {
     return event.wheelDelta > 0;
   }
   return event.deltaY < 0;
-}
+} */
 
 
 /* const scrollableElement = document.body; 
@@ -152,10 +152,9 @@ function checkScrollDirection(event) {
   }
 } */
 
-function checkScrollDirectionIsUp(event) {
+/* function checkScrollDirectionIsUp(event) {
   if (event.wheelDelta) {
     return event.wheelDelta > 0;
   }
   return event.deltaY < 0;
-}
-
+} */

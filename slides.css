@@ -3,16 +3,6 @@ body {
     height: 100vh;
 }
 
-.slider_slide {
-    display: none;
-    width: 100vw;
+.full-height {
     height: 100vh;
- 
-    /* preferential styles */
-    background-color: #ccc;
-    font-size: 30px;
-    text-align: center
- }
- .slider_slide:first-child {
-    display: block
- }
+}

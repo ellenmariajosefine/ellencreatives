@@ -30,60 +30,111 @@
         <div class="main-section">
             <h2 class="intro-headline">Here is an awesome headline</h2>
             <p class="intro-description">Here is an awesome description and CTA of Ellen Creatives.</p>
-            <div class="filter-section">
-                <div class="filter-group" id="filter1">Filter group 1</div>
-                <div class="filter-group" id="filter2">Filter group 2</div>
-                <div class="filter-group" id="filter3">Filter group 3</div>
-                <div class="filter-group" id="filter4">Filter group 4</div>
+            
+            <div id="filters">
+                <button class="filter-btn active" onclick = "filterObjects('all')">See all</button>
+                <button class="filter-btn" onclick = "filterObjects('uxGroup')">UX & Analytics</button>
+                <button class="filter-btn" onclick = "filterObjects('uiGroup')">Responsive UI</button>
+                <button class="filter-btn" onclick = "filterObjects('devGroup')">Front-End</button>
             </div>
+
             <div class="cases-section">
-                <div class="cases-group" id="case1">
+                <div class="box uxGroup" id="case-1">
+                    <h3 class="case-headline">UX Case</h3>
+                    <p class="case-descr">This is a short text about the case</p>
+                    <a href="#" class="case-text-link">Check it out</a>
+                </div>
+                <div class="box uiGroup" id="case-2">
+                    <h3 class="case-headline">UI Case</h3>
+                    <p class="case-descr">This is a short text about the case</p>
+                    <a href="#" class="case-text-link">Check it out</a>
+                </div>
+                <div class="box uiGroup uxGroup" id="case-3">
+                    <h3 class="case-headline">UX & UI Case</h3>
+                    <p class="case-descr">This is a short text about the case</p>
+                    <a href="#" class="case-text-link">Check it out</a>
+                </div>
+                <div class="box uiGroup devGroup" id="case-4">
+                    <h3 class="case-headline">UI & Front-End Case</h3>
+                    <p class="case-descr">This is a short text about the case</p>
+                    <a href="#" class="case-text-link">Check it out</a>
+                </div>
+                <div class="box uiGroup" id="case-5">
+                    <h3 class="case-headline">UI Case</h3>
+                    <p class="case-descr">This is a short text about the case</p>
+                    <a href="#" class="case-text-link">Check it out</a>
+                </div>
+                <div class="box uiGroup" id="case-6">
+                    <h3 class="case-headline">UI Case</h3>
+                    <p class="case-descr">This is a short text about the case</p>
+                    <a href="#" class="case-text-link">Check it out</a>
+                </div>
+                <div class="box devGroup" id="case-7">
+                    <h3 class="case-headline">Front-End Case</h3>
+                    <p class="case-descr">This is a short text about the case</p>
+                    <a href="#" class="case-text-link">Check it out</a>
+                </div>
+                <div class="box uiGroup" id="case-8">
+                    <h3 class="case-headline">UI Case</h3>
+                    <p class="case-descr">This is a short text about the case</p>
+                    <a href="#" class="case-text-link">Check it out</a>
+                </div>
+                <div class="box uiGroup devGroup" id="case-9">
+                    <h3 class="case-headline">UI & Front-End Case</h3>
+                    <p class="case-descr">This is a short text about the case</p>
+                    <a href="#" class="case-text-link">Check it out</a>
+                </div>
+            </div>
+            
+            <!-- <div class="cases-section">
+                <div class="box uxGroup uiGroup">
                     <h3 class="case-headline">This is a case</h3>
                     <p class="case-descr">This is a short text about the case</p>
                     <a href="#" class="case-text-link">Check it out</a>
                 </div>
-                <div class="cases-group" id="case2">
+                <div class="box uxGroup uiGroup devGroup">
                     <h3 class="case-headline">This is a case</h3>
                     <p class="case-descr">This is a short text about the case</p>
                     <a href="#" class="case-text-link">Check it out</a>
                 </div>
-                <div class="cases-group" id="case3">
+                <div class="box uiGroup">
                     <h3 class="case-headline">This is a case</h3>
                     <p class="case-descr">This is a short text about the case</p>
                     <a href="#" class="case-text-link">Check it out</a>
                 </div>
-                <div class="cases-group" id="case4">
+                <div class="box devGroup">
                     <h3 class="case-headline">This is a case</h3>
                     <p class="case-descr">This is a short text about the case</p>
                     <a href="#" class="case-text-link">Check it out</a>
                 </div>
-                <div class="cases-group" id="case5">
+                <div class="box uiGroup">
                     <h3 class="case-headline">This is a case</h3>
                     <p class="case-descr">This is a short text about the case</p>
                     <a href="#" class="case-text-link">Check it out</a>
                 </div>
-                <div class="cases-group" id="case6">
+                <div class="box devGroup">
                     <h3 class="case-headline">This is a case</h3>
                     <p class="case-descr">This is a short text about the case</p>
                     <a href="#" class="case-text-link">Check it out</a>
                 </div>
-                <div class="cases-group" id="case7">
+                <div class="box uiGroup">
                     <h3 class="case-headline">This is a case</h3>
                     <p class="case-descr">This is a short text about the case</p>
                     <a href="#" class="case-text-link">Check it out</a>
                 </div>
-                <div class="cases-group" id="case8">
+                <div class="box uiGroup">
                     <h3 class="case-headline">This is a case</h3>
                     <p class="case-descr">This is a short text about the case</p>
                     <a href="#" class="case-text-link">Check it out</a>
                 </div>
-                <div class="cases-group" id="case9">
+                <div class="box uiGroup">
                     <h3 class="case-headline">This is a case</h3>
                     <p class="case-descr">This is a short text about the case</p>
                     <a href="#" class="case-text-link">Check it out</a>
                 </div>
             </div>
-        </div>
+        </div> -->
+
         <div class="contact-footer">
             <div class="footer-title">Us,</div>
             <a href="#" class="footer-link">Influencing</a>
@@ -92,5 +143,7 @@
             <a href="#" class="footer-link">Sending us a fan-mail</a>
             <a href="#" class="footer-link">Calling us</a>
         </div>
+
+        <script src="JS/filterScript.js"></script>
     </body>
     </html>
