@@ -46,7 +46,7 @@ for (var i = 0; i < btns.length; i++) {
 
 //ROTATION SCRIPT
 const boxes = document.querySelectorAll(".box");
-const range = 40;
+const range = 50;
 console.log(boxes);
 const calcValue = (a,b) => (a/b * range - range / 2).toFixed(1);
 

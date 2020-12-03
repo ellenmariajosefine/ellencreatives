@@ -1,116 +1,137 @@
 <html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Ellen Creatives</title>
+<html lang="en">
 
-        <!-- Google Font: Open Sans -->
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
-        
-        <!-- Normalize CSS -->
-        <link rel="stylesheet" href="CSS/Reset.css">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ellen Creatives</title>
 
-        <!-- Stylesheet: Typography -->
-        <link rel="stylesheet" href="CSS/fonts.css">
+    <!-- Google Font: Open Sans -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
 
-        <!-- Stylesheet: Main -->
-        <link rel="stylesheet" href="CSS/styles.css">
-    </head>
-    <body>
-        <header class="header-container">
-            <nav class="nav-wrapper">
-                <img src="IMG/Ellen_wordmark@2x.png" alt="Ellen Creatives Logotype" id="nav-wordmark">
-                <a href="#" class="nav-link">Services</a>
-                <a href="#" class="nav-link">Cases</a>
-                <a href="#" class="nav-link">About us</a>
-                <a href="#" class="nav-link">Let's Chat</a>
-            </nav>
-        </header>
-        <div class="main-section">
-            <h2 class="intro-headline">Here is an awesome headline</h2>
-            <p class="intro-description">Here is an awesome description and CTA of Ellen Creatives.</p>
-            
-            <div id="filters">
-                <button class="filter-btn active" onclick = "filterObjects('all')">See all</button>
-                <button class="filter-btn" onclick = "filterObjects('uxGroup')">UX & Analytics</button>
-                <button class="filter-btn" onclick = "filterObjects('uiGroup')">Responsive UI</button>
-                <button class="filter-btn" onclick = "filterObjects('devGroup')">Front-End</button>
-            </div>
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="CSS/Reset.css">
 
-            <div class="cases-section">
-                <div class="box uxGroup uiGroup devGroup">
-                    <a href="#" class="case-text-link">
-                        <div id="case-1">
-                        </div>
-                        <h3 class="case-headline">Urban</h3>
-                    </a>
+    <!-- Stylesheet: Typography -->
+    <link rel="stylesheet" href="CSS/fonts.css">
+
+    <!-- Stylesheet: Main -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+
+<body>
+    <header class="header-container">
+        <nav class="nav-wrapper">
+            <img src="IMG/Ellen_wordmark@2x.png" alt="Ellen Creatives Logotype" id="nav-wordmark">
+            <a href="#" class="nav-link">Services</a>
+            <a href="#" class="nav-link activePage">Cases</a>
+            <a href="#" class="nav-link">About us</a>
+            <a href="#" class="nav-link">Let's Chat</a>
+        </nav>
+    </header>
+    <div class="main-section">
+        <h2 class="intro-headline">Here is an awesome headline</h2>
+        <p class="intro-description">Here is an awesome description and CTA of Ellen Creatives.</p>
+
+        <div id="filters">
+            <button class="filter-btn active" onclick="filterObjects('all')">See all</button>
+            <button class="filter-btn" onclick="filterObjects('uxGroup')">UX & Analytics</button>
+            <button class="filter-btn" onclick="filterObjects('uiGroup')">Responsive UI</button>
+            <button class="filter-btn" onclick="filterObjects('devGroup')">Front-End</button>
+        </div>
+
+        <div class="cases-section">
+            <div class="box uxGroup uiGroup devGroup">
+                <a href="#" class="case-text-link">
+                    <div id="case-1">
                     </div>
-
-                    <div class="box uxGroup uiGroup">
-                        <a href="#" class="case-text-link">
-                            <div id="case-2">
-                            </div>
-                            <h3 class="case-headline">Holofit</h3>
-                        </a>
-                        </div>
-
-                        <div class="box uiGroup">
-                            <a href="#" class="case-text-link">
-                                <div id="case-3">
-                                </div>
-                                <h3 class="case-headline">Mindster</h3>
-                            </a>
-                            </div>
-
-                            <div class="box uiGroup devGroup">
-                                <a href="#" class="case-text-link">
-                                    <div id="case-4">
-                                    </div>
-                                    <h3 class="case-headline">Viva Vin & Mat</h3>
-                                </a>
-                                </div>
-
-                                <div class="box uxGroup uiGroup">
-                                    <a href="#" class="case-text-link">
-                                        <div id="case-5">
-                                        </div>
-                                        <h3 class="case-headline">CSN</h3>
-                                    </a>
-                                    </div>
-
-                                    <div class="box uiGroup">
-                                        <a href="#" class="case-text-link">
-                                            <div id="case-6">
-                                            </div>
-                                            <h3 class="case-headline">Makeup Factory</h3>
-                                        </a>
-                                        </div>
-
-                                    <div class="box uiGroup">
-                                        <a href="#" class="case-text-link">
-                                            <div id="case-7">
-                                            </div>
-                                            <h3 class="case-headline">Mindmapper</h3>
-                                        </a>
-                                        </div>
-
-                                        <div class="box uiGroup">
-                                            <a href="#" class="case-text-link">
-                                                <div id="case-8">
-                                                </div>
-                                                <h3 class="case-headline">Light Up North</h3>
-                                            </a>
-                                            </div>
-
-                                            <div class="box uiGroup devGroup">
-                                                <a href="#" class="case-text-link">
-                                                    <div id="case-9">
-                                                    </div>
-                                                    <h3 class="case-headline">Ellen Creatives</h3>
-                                                </a>
-                                                </div>
+                    <div class="headline-bg">
+                        <h3 class="case-headline">Urban</h3>
+                    </div>
+                </a>
             </div>
+            <div class="box uxGroup uiGroup">
+                <a href="#" class="case-text-link">
+                    <div id="case-2">
+                    </div>
+                    <div class="headline-bg">
+                        <h3 class="case-headline">Holofit</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box uiGroup">
+                <a href="#" class="case-text-link">
+                    <div id="case-3">
+                    </div>
+                    <div class="headline-bg">
+                        <h3 class="case-headline">Mindster</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box uiGroup devGroup">
+                <a href="#" class="case-text-link">
+                    <div id="case-4">
+                    </div>
+                    <div class="headline-bg">
+                        <h3 class="case-headline">Viva Vin & Mat</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box uxGroup uiGroup">
+                <a href="#" class="case-text-link">
+                    <div id="case-5">
+                    </div>
+                    <div class="headline-bg">
+                        <h3 class="case-headline">CSN</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box uiGroup">
+                <a href="#" class="case-text-link">
+                    <div id="case-6">
+                    </div>
+                    <div class="headline-bg">
+                        <h3 class="case-headline">Makeup Factory</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box uiGroup">
+                <a href="#" class="case-text-link">
+                    <div id="case-7">
+                    </div>
+                    <div class="headline-bg">
+                        <h3 class="case-headline">Mindmapper</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box uiGroup">
+                <a href="#" class="case-text-link">
+                    <div id="case-8">
+                    </div>
+                    <div class="headline-bg">
+                        <h3 class="case-headline">Light Up North</h3>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box uiGroup devGroup">
+                <a href="#" class="case-text-link">
+                    <div id="case-9">
+                    </div>
+                    <div class="headline-bg">
+                        <h3 class="case-headline">Ellen Creatives</h3>
+                    </div>
+                </a>
+            </div>
+        </div>
 
         <div class="contact-footer">
             <div class="footer-title">Us,</div>
@@ -122,5 +143,6 @@
         </div>
 
         <script src="JS/filterScript.js"></script>
-    </body>
-    </html>
+</body>
+
+</html>

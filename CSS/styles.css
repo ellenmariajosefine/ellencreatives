@@ -34,6 +34,7 @@ html {
     --CTA: #4B9AAB;
     --secondary: #fff;
     font-size: 16px;
+    --transparent: rgba(255,255,255,0);
 }
 
 body {
@@ -52,7 +53,7 @@ body {
     height: 72px;
     top: 0px;
     left: 0px;
-    background-color: var(--yellow);
+    background-color: var(--white);
     z-index: 1000;
     box-sizing: border-box;
 }
@@ -81,7 +82,11 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--yellow);
+    color: var(--light-yellow);
+}
+
+.nav-link.activePage {
+    color: var(--yellow)
 }
 
 .contact-footer {
@@ -427,22 +432,6 @@ body {
 
 /*  cases specific styling  */
 
-.case-headline {
-    -webkit-transform: translateZ(35px);
-    transform: translateZ(35px);
-    text-align: center;
-    margin-top: 8px;
-    position: relative;
-    top: -30px;
-    left: 0px;
-}
-
-.case-descr {
-    -webkit-transform: translateZ(25px);
-    transform: translateZ(25px);
-
-}
-
 .main-section {
     padding-top: 72px;
 }
@@ -453,7 +442,7 @@ body {
 }
 
 #filters {
-    padding: 48px 100px;
+    padding: 16px 100px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -504,7 +493,7 @@ body {
 
     background: #fff;
     border-radius: 10px;
-    box-shadow: 20px 20px 50px 5px rgba(0, 0, 0, 0.1);;
+    box-shadow: 20px 20px 50px 5px rgba(0, 0, 0, 0.1);
     -webkit-transform-origin: 50% 50%;
     transform-origin: 50% 50%;
     -webkit-transform-style: preserve-3d;
@@ -560,10 +549,30 @@ body {
     background-image: url(../IMG/Cases-thumbnails/Urban-Urban_edited.jpg);
 }
 
+.case-headline {
+    -webkit-transform: translateZ(35px);
+    transform: translateZ(35px);
+    text-align: center;
+}
+
 .case-text-link {
     text-decoration: none;
     color: var(--black);
     text-align: left;
+}
+
+.headline-bg {
+    background-color: var(--white);
+    height: 50px;
+    width: 250px;
+    position: relative;
+    top: -30px;
+    left: 45px;
+    box-shadow: 5px 5px 25px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .show {
