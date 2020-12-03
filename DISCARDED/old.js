@@ -1,36 +1,66 @@
-/* SLIDES WITH NAV BTNS - WORKING SOLO */
- 
-/* let currentIndex = 0; // keep track of the current slide
- let newIndex = 0; // keep track of the new slide
- 
- const slides = document.querySelectorAll("slider_slide");
- const sliderNavButtons = document.querySelectorAll("slider_nav");
+// //SLIDING SCRIPT
+// let currentIndex = 0;
+// let newIndex = 0; // keep track of the new slide
 
- let slidesLength = slides.length; // number of slides
+// let slides = document.getElementsByClassName("slider_slide");
+// let sliderNavButtons = document.getElementsByClassName("slider_nav");
+// let slidesLength = slides.length; // number of slides
+// console.log(sliderNavButtons)
+
+// function navigateSlider() {
+//    if (newIndex === -1) newIndex = 0;
+//    else if (newIndex === slidesLength) newIndex = slidesLength - 1;
+
+//    sliderNavButtons[0].disabled = (newIndex === 0) ? true : false;
+//    sliderNavButtons[1].disabled = (newIndex === slidesLength - 1) ? true : false;
+
+//    slides[currentIndex].style.display = "none";
+//    slides[newIndex].style.display = "block";
+//    currentIndex = newIndex;
+// }
+
+// sliderNavButtons[0].onclick = function() {
+//   newIndex--;
+//   navigateSlider();
+// };
+
+// sliderNavButtons[1].onclick = function() {
+//   newIndex++;
+//   navigateSlider();
+// };
+
+// INFINITY SLIDES WITH NAV BTNS
+ 
+/* let currentIndex = 0;
+let newIndex = 0; // keep track of the new slide
+
+let slides = document.getElementsByClassName("slider_slide");
+let sliderNavButtons = document.getElementsByClassName("slider_nav");
+var slidesLength = slides.length; // number of slides
+console.log(sliderNavButtons);
 
 function navigateSlider() {
-   // check for extreme slides = beyond last/first slide. 
-   if (newIndex === -1) newIndex = slidesLength - 1;
-   else if (newIndex === slidesLength) newIndex = 0
+  // check for extreme slides, meaning slides past first/last slide.
+  if (newIndex === -1) newIndex = slidesLength - 1;
+  else if (newIndex === slidesLength) newIndex = 0
 
-   slides[currentIndex].style.display = "none";
-   slides[newIndex].style.display = "block";
-   currentIndex = newIndex;
+  slides[currentIndex].style.display = "none";
+  slides[newIndex].style.display = "block";
+  currentIndex = newIndex;
 }
 
 sliderNavButtons[0].onclick = function() {
-    newIndex--;
-    navigateSlider();
- };
- sliderNavButtons[1].onclick = function() {
-    newIndex++;
-    navigateSlider();
- } */
+   newIndex--;
+   navigateSlider();
+};
+sliderNavButtons[1].onclick = function() {
+   newIndex++;
+   navigateSlider();
+} */
 
- 
 // SCROLL DETECTION - WORKING SOLO BUT ONLY IF CONTENT IS BIGGER THAN WINDOW
 
-function scrollEventThrottle(fn) {
+/* function scrollEventThrottle(fn) {
     let last_known_scroll_position = 0;
     let ticking = false;
     window.addEventListener("scroll", function () {
@@ -54,7 +84,7 @@ function scrollEventThrottle(fn) {
         window.scrollBy(0,788);
         break;
     }
-});
+}); */
   
 // ALTERNATIVE SCROll CODE BUT DOESN'T WORK
 /*v
