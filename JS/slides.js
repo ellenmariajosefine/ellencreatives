@@ -1,5 +1,5 @@
 // STOPPING SLIDES WITH NAV BTNS
-let currentIndex = 0;
+/* let currentIndex = 0;
 let newIndex = 0; // keep track of the new slide
 
 let slides = document.getElementsByClassName("slider-slide");
@@ -29,4 +29,4 @@ sliderNavButtons[0].onclick = function() {
 sliderNavButtons[1].onclick = function() {
   newIndex++;
   navigateSlider();
-};
+}; */

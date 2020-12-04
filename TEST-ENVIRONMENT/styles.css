@@ -1,0 +1,254 @@
+/*  GENERAL STYLING */
+
+@font-face {
+    font-family: Platform-Regular;
+    src: url(../FONTS/Platform/Platform-Regular.woff);
+}
+
+@font-face {
+    font-family: Platform-Medium;
+    src: url(../FONTS/Platform/Platform-Medium.woff);
+    font-weight: Medium;
+}
+
+@font-face {
+    font-family: Platform-Bold;
+    src: url(../FONTS/Platform/Platform-Bold.woff);
+    font-weight: Bold
+}
+
+:root {
+    --black: #333;
+    --white: #fff;
+    --white-50: rgba(255, 255, 255, 0.7);
+    --bg-color: #fafafa;
+    --light-blue: #A5CCD5;
+    --light-yellow: #FFD391;
+    --yellow: #FFC062;
+    --yellow-gradient: linear-gradient(90deg, #FFC062 0.64%, #FFD9A1 100%);
+    --petrol: #4B9AAB;
+    --dark-petrol: #4691A1;
+    --CTA: #4B9AAB;
+    --secondary: #fff;
+    font-size: 16px;
+    --transparent: rgba(255,255,255,0);
+}
+
+.white-font {
+    color: var(--white);
+}
+
+
+.wrapper {
+    background-color: white;
+}
+
+.header-container {
+    width: 100vw;
+    position: fixed;
+    height: 72px;
+    top: 0px;
+    left: 0px;
+    /* background-color: var(--transparent); */
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+
+.nav-wrapper {
+    margin: 16px 100px;
+    height: 40px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    align-items: center;
+}
+
+#nav-wordmark {
+    height: 32px;
+    margin-right: auto;
+}
+
+#wordmarkLink {
+    margin-right: auto;
+}
+
+.nav-link {
+    font-size: 1.2rem;
+    font-family: "Platform-Bold";
+    margin-left: 32px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--light-yellow);
+}
+
+.nav-link.activePage {
+    color: var(--yellow)
+}
+
+.contact-footer {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+    align-items: center;
+    margin: 32px 0px 32px 100px;
+    position: fixed;
+    left: 0px;
+    bottom: 0px;
+    z-index: 999;
+}
+
+.footer-title {
+    text-align: right;
+    margin-right: 16px;
+    margin-left: 16px;
+    font-size: 1.2rem;
+    font-family: "Platform-Bold";
+    margin-left: 32px;
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.footer-link {
+    text-align: left;
+    margin-right: 16px;
+    font-size: 1rem;
+    font-family: "Platform-Regular";
+    color: var(--white);
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.footer-link:hover {
+    color: var(--white-50);
+}
+
+.full-height {
+    height: 100vh;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.full-width {
+    width: 100vw;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+.hero-section h1 {
+    line-height: 100%;
+    text-align: center;
+    margin: 24px auto 8px auto;
+}
+
+.bg-lightblue {
+    background-color: var(--light-blue);
+}
+
+.bg-lightyellow {
+    background-color: var(--light-yellow);
+}
+
+.bg-yellow-gradient {
+    background-image: var(--yellow-gradient);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-petrol {
+    background-color: var(--petrol);
+}
+
+/*  Home specific styling  */
+
+.btn, .CTA {
+    padding: 12px 32px;
+    border-radius: 40px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    font-size: 1rem;
+    outline: none;
+    /* text-transform: uppercase; */
+}
+
+.CTA {
+    background-color: var(--CTA);
+    border: 2px solid var(--CTA);
+    margin-right: 16px;
+    color: var(--white);
+}
+
+
+.CTA:hover {
+    background-color: var(--dark-petrol);
+}
+
+.btn:hover {
+    background-color: var(--bg-color);
+    color: var(--CTA);
+}
+
+.btn {
+    background-color: var(--white);
+    border: 2px solid var(--white);
+    margin-left: 16px;
+    color: var(--CTA);
+}
+
+button {
+    outline: none;
+}
+
+.hero-section {
+    width: 100vw;
+    margin:0px;
+    padding: 50px;
+    background-color: var(--petrol);
+    box-sizing: border-box;
+}
+
+.hero-content {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.lottie {
+    margin: 0px auto;
+}
+
+.hero-img {
+    height: 200px;
+}
+
+h1, h2, h3, h4, p {
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: sans-serif;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+  }
+
+  section {
+    height: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+  }

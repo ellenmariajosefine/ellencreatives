@@ -17,10 +17,23 @@
     font-weight: Bold
 }
 
-html {
+* {
     box-sizing: border-box;
-    width: 100vw;
+  }
+
+  html {
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
 }
+
+section {
+    height: 100vh;
+    width: 100vh;
+    scroll-snap-align: start;
+    text-align: center;
+    position: relative;
+  }
 
 :root {
     --black: #333;
@@ -63,7 +76,7 @@ body {
     height: 72px;
     top: 0px;
     left: 0px;
-    /* background-color: var(--transparent); */
+    background-color: var(--transparent);
     z-index: 1000;
     box-sizing: border-box;
 }
@@ -182,13 +195,13 @@ button {
 }
 
 .hero-section {
-    width: 100vw;
     margin:0px;
     padding: 50px;
-    background-color: var(--yellow)
 }
 
 .hero-content {
+    width: 100vw;
+    height: 100vh;
     display: flex;
     flex-flow: column wrap;
     justify-content: flex-start;
@@ -237,7 +250,6 @@ button {
 .about-section, 
 [id*=section-],
 .case-highlight-section { 
-    width:100vw;
     display: flex;
     flex-flow: row wrap;
     box-sizing: border-box;
