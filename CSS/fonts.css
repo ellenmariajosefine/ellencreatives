@@ -1,5 +1,17 @@
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5,.big-subtitle {
     font-family: "Platform-Bold";
+    line-height: 150%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    letter-spacing: 1px;
+}
+
+p, 
+.bold-p, 
+.overline {
+    font-family: "Open Sans", sans-serif;
     line-height: 150%;
     margin-block-start: 0em;
     margin-block-end: 0em;
@@ -7,44 +19,42 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 0em;
 }
 
+
+
 h1 {
     font-size: 3.1rem;
-    letter-spacing: 1px;
 }
 
 h2 {
     font-size: 2.4rem;
-    letter-spacing: 1px;
 }
 
 h3 {
     font-size: 1.4rem;
-    letter-spacing: 1px;
 }
 
 h4 {
     font-size: 1.2rem;
-    letter-spacing: 1px;
 }
 
 .big-subtitle {
     font-size: 1rem;
-    font-family: "Open Sans";
-    font-weight: bold;
-    line-height: 150%;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
 }
 
 p  {
-    font-family: "Open Sans", sans-serif;
-    line-height: 150%;
     font-size: 1rem;
 }
 
 .bold-p {
-    font-family: "Open Sans", sans-serif;
-    line-height: 150%;
     font-size: 1rem;
     font-weight: bold;
+}
+
+.small-p {
+    font-size: 0.9rem;
+}
+
+.overline {
+    font-size: 0.8rem;
+    letter-spacing: 5px;
 }
