@@ -19,9 +19,18 @@
 
     <!-- Stylesheet: Main -->
     <link rel="stylesheet" href="CSS/styles.css">
+
+    <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js'></script>
+    <!-- This is  a jquery-plugin "zoom-master" by Jack Moore -->
+    <script src='zoom-master/jquery.zoom.js'></script>
+    <script>
+        $(document).ready(function () {
+            $('#ex1').zoom();
+        });
+    </script>
 </head>
 
-<body>
+<body id="body-caseOverview">
     <header class="header-container">
         <nav class="nav-wrapper">
             <a href="home.html" id="wordmarkLink"><img class="logotype" src="IMG/logo-bw.png"
@@ -46,30 +55,30 @@
     <section>
         <div class="case-summary">
             <div class="case-index">
-                <div class="index-container">
+                <div class="index-container index-first">
                     <div class="case-thumb-title overline white-font">CLIENT</div>
                     <p class="case-thumb-text big-subtitle white-font">Urban</p>
                 </div>
-                <div class="index-container">
+                <div class="index-container index-siblings">
                     <div class="case-thumb-title overline white-font">YEAR</div>
                     <p class="case-thumb-text big-subtitle white-font">2020</p>
                 </div>
-                <div class="index-container">
+                <div class="index-container index-siblings">
                     <div class="case-thumb-title overline white-font">PROJECT</div>
                     <p class="case-thumb-text big-subtitle white-font">UX | UI | Front-End</p>
                 </div>
-                <div class="index-container">
+                <div class="index-container index-siblings">
                     <div class="case-thumb-title overline white-font">TEAM</div>
                     <p class="case-thumb-text big-subtitle white-font">Ellen Creatives</p>
                 </div>
             </div>
             <div class="summary">
                 <div class="left-container-20-80">
-                    <div class="chapter-title">Summary</div>
+                    <div class="chapter-title white-font">Summary</div>
                 </div>
                 <div class="right-container-80-20">
-                    <h3>To solve a problem</h3>
-                    <p>Our task was to create a website or an app that solves a problem.
+                    <h3 class="white-font">To solve a problem</h3>
+                    <p class="white-font">Our task was to create a website or an app that solves a problem.
                         <br><br>
                         In the creative process, everyone in the team came up with a few ideas of projects, and in the
                         end
@@ -82,43 +91,51 @@
                         the
                         every
                         day routines against something new and exciting within culture, events, food and night life.
+                        <br><br>
+                        Once settled for the idea, target group and evaluation of the research, it was time to
+                        conceptualise. We started the process by identifying the functions we wanted to include in the
+                        app. From that we could build our sitemap, and then start to sketch the wireframes on paper.
+                        <br><br>
+                        During our wireframe work, we tested the App's function and structure with a small group of test
+                        persons. All where asked to complete a certain task. From each test, issues or concerns were
+                        identified and improvements were implemented.
                     </p>
-                    <button href="#" class="btn-skip">Skip to the juicy part</button>
                 </div>
             </div>
         </div>
     </section>
     <section>
-        <div class="case-visuals">
+        <div class="case-visuals bg-lightyellow">
             <div class="left-container-20-80">
-                <div class="chapter-title">Visuals</div>
+                <div class="chapter-title white-font">Visuals</div>
             </div>
             <div class="right-container-80-20">
-                <h3>This is a title for the visuals</h3>
-
-                <div class="colors-section">
-                    <div class="colors">
-                        <img class="color-representation" src="IMG/Placeholders/color-example.jpg" alt="">
-                        <img class="color-representation" src="IMG/Placeholders/color-example.jpg" alt="">
-                        <img class="color-representation" src="IMG/Placeholders/color-example.jpg" alt="">
+                <h3 class="white-font">Our building blocks</h3>
+                <div class="visuals-container">
+                    <div class="colors-section">
+                        <div class="colors">
+                            <img class="color-representation" src="IMG/Cases-thumbnails/Urban-Case/color-yellow.png"
+                                alt="">
+                            <img class="color-representation" src="IMG/Cases-thumbnails/Urban-Case/color-petrol.png"
+                                alt="">
+                            <img class="color-representation" src="IMG/Cases-thumbnails/Urban-Case/color-black.png"
+                                alt="">
+                        </div>
                     </div>
-                </div>
-                <div class="typography-section">
-                    <div class="typography-headlines">
-                        <h3>This is a headline</h2>
-                            <p>AaBbCcDdEeFfGgHhIiJjKkLl<br>MmNnOoPpQqRrSsTtUuVvWwXxYyZz
-                        </h3>
+                    <div class="typography-section">
+                        <div class="typography-headlines">
+                            <img src="IMG/Cases-thumbnails/Urban-Case/typo-headline.png">
+                        </div>
+                        <div class="typography-bread">
+                            <img src="IMG/Cases-thumbnails/Urban-Case/typo-bread.png">
+                        </div>
                     </div>
-                    <div class="typography-bread">
-                        <h3>This is my bread</h3>
-                        <p>AaBbCcDdEeFfGgHhIiJjKkLl<br>MmNnOoPpQqRrSsTtUuVvWwXxYyZz</p>
+                    <div class="images-section">
+                        <img class="image-tonality" src="IMG/Cases-thumbnails/Urban-Case/Urban-logo.png" alt="">
+                        <img class="image-tonality" src="IMG/Cases-thumbnails/Urban-Case/Urban-element.png" alt="">
+                        <img class="image-tonality" src="IMG/Cases-thumbnails/Urban-Case/Friends-element.png" alt="">
+                        <img class="image-tonality" src="IMG/Cases-thumbnails/Urban-Case/Map-element.png" alt="">
                     </div>
-                </div>
-                <div class="images-section">
-                    <img class="image-tonality" src="IMG/Placeholders/Picture-placeholder.png" alt="">
-                    <img class="image-tonality" src="IMG/Placeholders/Picture-placeholder.png" alt="">
-                    <img class="image-tonality" src="IMG/Placeholders/Picture-placeholder.png" alt="">
-                    <img class="image-tonality" src="IMG/Placeholders/Picture-placeholder.png" alt="">
                 </div>
             </div>
         </div>
@@ -128,34 +145,40 @@
     <section>
         <div class="case-output">
             <div class="left-container-20-80">
-                <div class="chapter-title">Case output</div>
+                <div class="chapter-title white-font">Case output</div>
             </div>
             <div class="right-container-80-20">
-                <h3>This is a title for the Case output</h3>
-                <p>CSN is the Swedish board of Student Finance. Their services and App are used by students as well as
-                    Alumnis who need to pay back their student loans. Their App is known amongst student to be hard to
-                    navigate and use, and our task was to improve the UX and navigation. ​
-                    <br>
-                    <br>Recently CSN got a new brand identity that's been implemented on their website but not in their
-                    App.
-                    The new App should reflect their new brand identity and tonality. </p>
-                <img class="case-output-img" src="IMG/Placeholders/Picture-placeholder.png" alt="">
+                <h3 class="white-font">Urban - For locals, by locals</h3>
+                <p class="white-font">In the end we went for a more basic app than what we initially thought, with the
+                    concept turning out to be something between Tripadvisor, Instagram and ThatsUp but with the main
+                    important feature and USP: Urban is the app for locals, by locals.
+                    <br><br>
+                    Everyone we presented the app to, really liked the idea and expressed that this was a service that
+                    they would actually use to explore their own city.</p>
+                <img class="case-output-img" src="IMG/Cases-thumbnails/Urban-Case/prototyper.png" alt="">
             </div>
         </div>
     </section>
     <section>
-        <div class="case-final">
+        <div class="case-final bg-yellow">
             <div class="left-img-container">
-                <img src="IMG/Placeholders/Phone mockup.png" alt="" class="case-final-img">
+                <img id="zoom-icon" src="IMG/Icons-elements/magnifying-glass-petrol.png"
+                    alt="Magnifying glass for zooming image">
+                <!-- This is  a jquery-plugin "zoom-master" -->
+                <span class='zoom' id='ex1'>
+                    <img id="urban-showcase" src='IMG/Cases-thumbnails/Urban-Case/Urban-web.png' alt='Urban showcase' />
+                </span>
             </div>
             <div class="right-container">
-                <h2>This is a title</h2>
-                <h3>This is a sub-title</h3>
-                <p>Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit.
-                    Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit.</p>
-                <button href="#" class="CTA" id="case-btn">CTA Button</button>
+                <h2 class="white-font">And the saga continues</h2>
+                <p class="white-font">A straight-to-the-point landing page filled with the beautiful elements and icons
+                    from the App.
+                    <br><br>The landing page has one sole mission; Get the users to download the App.
+                    <br><br><b>💡 Hint!</b> <i>Hover the image to zoom.</i></p>
+                <div class="btn-floater-left">
+                    <button href="#" class="CTA" id="case-btn">Check it out</button>
+                    <button href="#" class="btn">Get in contact</button>
+                </div>
             </div>
         </div>
     </section>
@@ -175,4 +198,5 @@
     </div>
 
     <script src="JS/script.js"></script>
+    <script src="JS/scrollMeCase.js"></script>
 </body>
