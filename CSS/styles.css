@@ -821,7 +821,7 @@ button {
 
 .case-hero {
     height: 100vh;
-    background-image: url(../IMG/Cases-thumbnails/Urban-Urban_edited.jpg);
+    background-image: url(../IMG/Cases-thumbnails/Urban-Case/Urban-hero.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -832,14 +832,18 @@ button {
     align-items: center;
 }
 
-.case-hero-text h2, 
-.case-hero-text h4, 
-.case-hero-text p {
-    text-align: left;
-}
 
-.case-hero-text {
-    margin-left: 200px;
+.case-hero-title {
+    font-size: 8rem;
+    font-family: "Platform-Bold";
+    line-height: 150%;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    letter-spacing: 1px;
+    color: var(--petrol);
+    margin-left: 117px;
 }
 
 .case-hero-section, 
@@ -853,12 +857,12 @@ button {
 }
 
 .case-index {
-    height: 20vh;
-    padding: 75px 75px 0px 75px;
+    height: 15vh;
+    padding: 0px 75px 0px 75px;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     background-color: var(--dark-petrol);
 }
 
@@ -878,7 +882,8 @@ button {
 }
 
 .case-summary {
-    background-color: var(--petrol)
+    background-color: var(--petrol);
+    padding-top: 80px;
 }
 
 .summary, 
@@ -895,7 +900,7 @@ button {
 
 .summary {
     margin-top: 64px;
-    height: 80vh
+    height: 85vh
 }
 
 .left-container-20-80 {
@@ -962,7 +967,6 @@ button {
 
 .Visuals-section-title {
     margin: 24px 0px 24px 0px;
-    color: var(--white);
 }
 
 .typography-headlines img,
