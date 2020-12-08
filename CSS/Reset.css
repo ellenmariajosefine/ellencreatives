@@ -347,3 +347,8 @@
   [hidden] {
     display: none;
   }
+
+  :-webkit-any-link {
+    color: #333;
+    cursor: pointer;
+    text-decoration: none;
