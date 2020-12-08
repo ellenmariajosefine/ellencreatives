@@ -83,7 +83,7 @@
                 <div class="form">
                     <h2 class="white-font">Get rescued</h2>
                     <div id="messages"></div>
-                    <form id="contactForm"action="" novalidate>
+                    <form id="contactForm" method="POST" action="about.html" novalidate>
                         <div class="form-field">
                             <label class="big-subtitle white-font" for="inputName">Name<span class="asterix"> *
                                 <span class="tooltiptext">This is required</span>
@@ -148,10 +148,10 @@
                                 <span class="tooltiptext">This is required</span>
                             </span>
                         </label>
-                            <textarea name="message" rows="1" cols="30" id="inputDescr"
+                            <textarea class="input" name="message" rows="1" cols="30" id="inputDescr"
                                 placeholder="Although we enjoy reading books, better keep this one short."></textarea>
                         </div>
-                        <button type="submit" class="CTA">Get Rescued!</button>
+                        <button type="submit" id="submitform" class="CTA">Get Rescued!</button>
                     </form>
                 </div>
             </div>

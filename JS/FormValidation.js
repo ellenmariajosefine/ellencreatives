@@ -1,11 +1,11 @@
-const contactForm = document.querySelector('#contactForm');
+const contactForm   = document.querySelector('#contactForm');
+const submitBtn     = document.querySelector('#submitform')
 
 contactForm.addEventListener('submit', function (evt) {
-    evt.preventDefault();
-    let inputName = document.querySelector('#inputName');
-    let inputEmail = document.querySelector('#inputEmail');
-    let inputPhone = document.querySelector('#inputPhone');
-    let textArea = document.querySelector('HTMLTextAreaElement');
+    let inputName       = document.querySelector('#inputName');
+    let inputEmail      = document.querySelector('#inputEmail');
+    let inputPhone      = document.querySelector('#inputPhone');
+    let textArea        = document.querySelector('#inputDescr');
 
     if (ifStringEmpty(inputName, inputEmail, inputPhone, textArea)) {
         alert(
@@ -34,10 +34,11 @@ It helps if we know what you need help with... 🥸 Please write something in th
         return input.value.trim() === '';
     }
 
-    if (ifStringEmpty === false) {
-        alert('Woho! Your message was sent to us 🤗');
-    } else {
-        alert("Aw.. it didn't work, please try again 😢")
+    if  (ifStringEmpty(input) === '') {
+        alert("Woho! Your message has been sent to us 🥳");
     }
-
+    else {
+        alert("Aw.. it didn't work, please try again 😢");
+        evt.preventDefault();
+    } 
 })
