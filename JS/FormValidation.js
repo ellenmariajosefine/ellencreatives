@@ -1,4 +1,4 @@
-let form = document.querySelector('form');
+const contactForm = document.querySelector('#contactForm');
 
 contactForm.addEventListener('submit', function (evt) {
     evt.preventDefault();
@@ -6,7 +6,6 @@ contactForm.addEventListener('submit', function (evt) {
     let inputEmail = document.querySelector('#inputEmail');
     let inputPhone = document.querySelector('#inputPhone');
     let textArea = document.querySelector('HTMLTextAreaElement');
-    const emailError = document.querySelector('#mail + span.error');
 
     if (ifStringEmpty(inputName, inputEmail, inputPhone, textArea)) {
         alert(

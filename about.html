@@ -85,22 +85,28 @@
                     <div id="messages"></div>
                     <form id="contactForm"action="" novalidate>
                         <div class="form-field">
-                            <label class="big-subtitle white-font" for="inputName">Name<span class="asterix"> *</span></label>
+                            <label class="big-subtitle white-font" for="inputName">Name<span class="asterix"> *
+                                <span class="tooltiptext">This is required</span>
+                            </span>
+                        </label>
                             <input class="input" type="text" class="form-control" id="inputName"
                                 placeholder="What shall we call you?">
-                                <span class="error" aria-live="polite"></span>
                         </div>
                         <div class="form-field">
-                            <label class="big-subtitle white-font" for="inputPhone">Phone<span class="asterix"> *</span></label>
+                            <label class="big-subtitle white-font" for="inputPhone">Phone<span class="asterix"> *
+                                <span class="tooltiptext">This is required</span>
+                            </span>
+                        </label>
                             <input class="input" type="tel" class="form-control" id="inputPhone"
                                 placeholder="How can we reach you?">
-                                <span class="error" aria-live="polite"></span>
                         </div>
                         <div class="form-field">
-                            <label class="big-subtitle white-font" for="inputEmail">E-mail<span class="asterix"> *</span></label>
+                            <label class="big-subtitle white-font" for="inputEmail">E-mail<span class="asterix"> *
+                                <span class="tooltiptext">This is required</span>
+                            </span>
+                        </label>
                             <input class="input" type="email" class="form-control" id="inputEmail"
                                 placeholder="How can we reach you?"> 
-                                <span class="error" aria-live="polite"></span>
                         </div>
                         <div class="check-field">
                             <div class="form-row">
@@ -138,10 +144,12 @@
                             </div>
                         </div>
                         <div class="form-field">
-                            <label class="big-subtitle white-font" for="inputDescr">How can we help?<span class="asterix"> *</span></label>
+                            <label class="big-subtitle white-font" for="inputDescr">How can we help?<span class="asterix"> *
+                                <span class="tooltiptext">This is required</span>
+                            </span>
+                        </label>
                             <textarea name="message" rows="1" cols="30" id="inputDescr"
                                 placeholder="Although we enjoy reading books, better keep this one short."></textarea>
-                                <span class="error" aria-live="polite"></span>
                         </div>
                         <button type="submit" class="CTA">Get Rescued!</button>
                     </form>
