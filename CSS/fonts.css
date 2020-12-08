@@ -8,9 +8,11 @@ h1, h2, h3, h4, h5,.big-subtitle {
     letter-spacing: 1px;
 }
 
-p, 
+p,
+.p, 
 .bold-p, 
-.overline {
+.overline, 
+.small-p {
     font-family: "Open Sans", sans-serif;
     line-height: 150%;
     margin-block-start: 0em;
@@ -18,8 +20,6 @@ p,
     margin-top: 0em;
     margin-bottom: 0em;
 }
-
-
 
 h1 {
     font-size: 3.1rem;
@@ -38,7 +38,7 @@ h4 {
 }
 
 .big-subtitle {
-    font-size: 1rem;
+    font-size: 1.2rem;
 }
 
 p  {
@@ -57,4 +57,8 @@ p  {
 .overline {
     font-size: 0.8rem;
     letter-spacing: 5px;
+}
+
+.p {
+    font-size: 1rem;
 }

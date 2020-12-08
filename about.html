@@ -21,78 +21,153 @@
     <link rel="stylesheet" href="CSS/styles.css">
 </head>
 
-<body>
+<body id="about-body">
     <header class="header-container">
         <nav class="nav-wrapper">
-            <a href="home.html" id="wordmarkLink"><img src="IMG/Ellen_wordmark@2x.png" alt="Ellen Creatives Logotype" id="nav-wordmark"></a>
+            <a href="home.html" id="wordmarkLink"><img class="logotype" src="IMG/logo-bw.png"
+                    alt="Ellen Creatives Logotype" id="nav-wordmark"></a>
             <a href="home.html#servicesAnchor" class="nav-link">Services</a>
             <a href="cases.html" class="nav-link">Cases</a>
             <a href="about.html" class="nav-link activePage">About us</a>
             <a href="home.html#contactAnchor" class="nav-link">Let's Chat</a>
         </nav>
     </header>
-    <div class="about-sections">
-        <div id="section-1">
-            <div class="left-container">
-                <img src="IMG/Placeholders/Portrait-placeholder.png" alt="" class="about-img">
+
+    <section>
+        <div class="about-section full-screen bg-yellow">
+            <div class="left-container-about">
+                <img src="IMG/eating2.png" alt="" id="about-img-1">
             </div>
-            <div class="right-container">
-                <h2>This is a title</h2>
-                <h3>This is a sub-title</h3>
-                <p>Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit.
-                    Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit.</p>
-            </div>
-        </div>
-        <div id="section-2">
-            <div class="left-container">
-                <img src="IMG/Placeholders/Picture-placeholder.png" alt="" class="about-img">
-            </div>
-            <div class="right-container">
-                <h2>This is a title</h2>
-                <h3>This is a sub-title</h3>
-                <p>Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit.
-                    Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet consectetur
-                    adipisicing elit.</p>
+            <div class="right-container-about">
+                <h2 class="white-font about-title">We eat web for breakfast</h2>
+                <p class="white-font about-p">How could a company that eat web for breakfast, not be the most awesome
+                    designers and developers? We actually don't know, because we simply prove the point.
+                    <br><br>
+                    I'm Batman Bats frighten me. It's time my enemies shared my dread. I seek the means to fight
+                    injustice. To turn fear against those who prey on the fearful. I'll be standing where l belong.
+                    Between you and the peopIe of Gotham
+                </p>
             </div>
         </div>
-        <div id="section-3">
-            <div class="left-container">
-                <img src="IMG/Placeholders/Portrait-placeholder.png" alt="" class="about-img">
-            </div>
-            <div class="right-container">
-                <h3>This is a title</h2>
-                    <h3>This is a sub-title</h3>
-                    <p>Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit.
-                        Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.</p>
-            </div>
-        </div>
-        <div id="section-4">
-            <div class="left-container">
-                <img src="IMG/Placeholders/Picture-placeholder.png" alt="" class="about-img">
-            </div>
-            <div class="right-container">
-                <h4>This is a title</h2>
-                    <h3>This is a sub-title</h3>
-                    <p>Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit.
-                        Here is an awesome description and CTA of Ellen Creatives. Lorem ipsum dolor sit amet
-                        consectetur adipisicing elit.</p>
+    </section>
+
+    <section>
+        <div class="slider-container">
+            <div class="case-highlight-section full-screen bg-petrol">
+                <div class="left-container">
+                    <h2 class="white-font">We rescue your project</h2>
+                    <p class="white-font"> Someone like you. Someone who'll rattle the cages. It's not who I am
+                        underneath but what I do that defines me. Accomplice? I'm gonna tell them the whole thing was
+                        your idea.
+                        <br><br>
+                        Bats frighten me. It's time my enemies shared my dread. This isn't a car. I'm Batman I will go
+                        back to Gotham and I will fight men Iike this but I will not become an executioner. I seek the
+                        means to fight injustice. To turn fear against those who prey on the fearful.
+                        <br><br>
+                        Does it come in black? I will go back to Gotham and I will fight men Iike this but I will not
+                        become an executioner. </p>
+                </div>
+                <div class="right-container">
+                    <img src="IMG/hero4.png" alt="" id="about-img-2">
+                </div>
             </div>
         </div>
-    </div>
+    </section>
+
+    <section>
+        <div class="form-container bg-yellow">
+            <div class="left-container">
+                <img src="IMG/hero6.png" alt="" id="about-img-3">
+            </div>
+            <div class="right-container">
+                <div class="form">
+                    <h2 class="white-font">Get rescued</h2>
+                    <div id="messages"></div>
+                    <form id="contactForm"action="" novalidate>
+                        <div class="form-field">
+                            <label class="big-subtitle white-font" for="inputName">Name<span class="asterix"> *</span></label>
+                            <input class="input" type="text" class="form-control" id="inputName"
+                                placeholder="What shall we call you?">
+                                <span class="error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-field">
+                            <label class="big-subtitle white-font" for="inputPhone">Phone<span class="asterix"> *</span></label>
+                            <input class="input" type="tel" class="form-control" id="inputPhone"
+                                placeholder="How can we reach you?">
+                                <span class="error" aria-live="polite"></span>
+                        </div>
+                        <div class="form-field">
+                            <label class="big-subtitle white-font" for="inputEmail">E-mail<span class="asterix"> *</span></label>
+                            <input class="input" type="email" class="form-control" id="inputEmail"
+                                placeholder="How can we reach you?"> 
+                                <span class="error" aria-live="polite"></span>
+                        </div>
+                        <div class="check-field">
+                            <div class="form-row">
+                                <label class="big-subtitle white-font" for="inputCheck">How can we rescue you?</label>
+                                <div class="checkboxes">
+                                    <div class="checkbox-group">
+                                        <label class="container small-p white-font" for="Answ-UX">
+                                            <input type="checkbox" id="Answ-UX" name="Answ-UX" value="UX-Strategy">
+                                            <span class="checkmark"></span>
+                                            UX/Strategy
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <label class="container small-p white-font"  for="Answ-UI">
+                                        <input type="checkbox" id="Answ-UI" name="Answ-UI" value="UI">
+                                        <span class="checkmark"></span>
+                                        UI
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <label class="container small-p white-font"  for="Answ-FE">
+                                        <input type="checkbox" id="Answ-FE" name="Answ-FE" value="Front-End">
+                                        <span class="checkmark"></span>
+                                        Front-End Development
+                                        </label>
+                                    </div>
+                                    <div class="checkbox-group">
+                                        <label class="container small-p white-font"  for="Answ-other">
+                                        <input type="checkbox" id="Answ-other" name="Answ-other" value="Other">
+                                        <span class="checkmark"></span>
+                                        Other
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-field">
+                            <label class="big-subtitle white-font" for="inputDescr">How can we help?<span class="asterix"> *</span></label>
+                            <textarea name="message" rows="1" cols="30" id="inputDescr"
+                                placeholder="Although we enjoy reading books, better keep this one short."></textarea>
+                                <span class="error" aria-live="polite"></span>
+                        </div>
+                        <button type="submit" class="CTA">Get Rescued!</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <div class="contact-footer">
-        <div class="footer-title">Us,</div>
-        <a href="#" class="footer-link">Influencing</a>
-        <a href="#" class="footer-link">Being Pros'</a>
-        <div class="footer-title">You,</div>
-        <a href="#" class="footer-link">Sending us a fan-mail</a>
-        <a href="#" class="footer-link">Calling us</a>
+        <div class="scrollMe">
+            <img class="arrow-down" src="IMG/Icons-elements/arrow-white-down-thicker@2x.png" alt="">
+            <p id="scrollMeLabel-down">Swipe down to continue</p>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer-title">Us,</div>
+            <a href="#" class="footer-link">Influencing</a>
+            <a href="#" class="footer-link">Being Pros'</a>
+            <div class="footer-title">You,</div>
+            <a href="#" class="footer-link">Sending us a fan-mail</a>
+            <a href="#" class="footer-link">Calling us</a>
+        </div>
     </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="JS/scrollMeAbout.js"></script>
+    <script src="JS/FormValidation.js"></script>
 </body>
 
 </html>
