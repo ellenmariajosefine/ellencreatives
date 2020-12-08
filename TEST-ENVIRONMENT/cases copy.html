@@ -19,28 +19,32 @@
 
     <!-- Stylesheet: Main -->
     <link rel="stylesheet" href="../CSS/styles.css">
+
+    
 </head>
 
 <body id="cases-body">
     <header class="header-container">
         <nav class="nav-wrapper">
-            <a href="home.html" id="wordmarkLink"><img src="IMG/Ellen_wordmark@2x.png" alt="Ellen Creatives Logotype"
+            <a href="home.html" id="wordmarkLink"><img src="../IMG/logo-yb.png" alt="Ellen Creatives Logotype"
                     id="nav-wordmark"></a>
-            <a href="home.html#servicesAnchor" class="nav-link">Services</a>
-            <a href="cases.html" class="nav-link activePage">Cases</a>
-            <a href="about.html" class="nav-link">About us</a>
-            <a href="home.html#contactAnchor" class="nav-link">Let's Chat</a>
+            <a href="home.html#servicesAnchor" class="nav-link-inverted">Services</a>
+            <a href="cases.html" class="nav-link-inverted activePage">Cases</a>
+            <a href="about.html" class="nav-link-inverted">About us</a>
+            <a href="home.html#contactAnchor" class="nav-link-inverted">Let's Chat</a>
         </nav>
     </header>
-<!-- 
-    <div class="main-section">
-        <div id="filters">
-            <button class="filter-btn active" onclick="filterObjects('all')">See all</button>
-            <button class="filter-btn" onclick="filterObjects('uxGroup')">UX & Analytics</button>
-            <button class="filter-btn" onclick="filterObjects('uiGroup')">Responsive UI</button>
-            <button class="filter-btn" onclick="filterObjects('devGroup')">Front-End</button>
+
+    <div class="cases-main">
+    <div class="filters-section">
+        <div id="slidedown-btn"><img src="../IMG/Icons-elements/filter128x128-White.png" alt=""></div>
+            <div id="filters" class="filters-slidedown">
+                <button class="filter-btn active" onclick="filterObjects('all')">See all</button>
+                <button class="filter-btn" onclick="filterObjects('uxGroup')">UX & Analytics</button>
+                <button class="filter-btn" onclick="filterObjects('uiGroup')">Responsive UI</button>
+                <button class="filter-btn" onclick="filterObjects('devGroup')">Front-End</button>
         </div>
- -->
+
         <div class="cases-section">
 
             <div class="outer-case-boxes petrol-fill" id="case-1">
@@ -211,33 +215,23 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
-
+        <div class="contact-footer-plain">
+            <div class="footer-title-inverted">Us,</div>
+            <a href="#" class="footer-link-inverted">Influencing</a>
+            <a href="#" class="footer-link-inverted">Being Pros'</a>
+            <div class="footer-title-inverted">You,</div>
+            <a href="#" class="footer-link-inverted">Sending us a fan-mail</a>
+            <a href="#" class="footer-link-inverted">Calling us</a>
         </div>
 
-        <div class="contact-footer">
-            <div class="footer-title">Us,</div>
-            <a href="#" class="footer-link">Influencing</a>
-            <a href="#" class="footer-link">Being Pros'</a>
-            <div class="footer-title">You,</div>
-            <a href="#" class="footer-link">Sending us a fan-mail</a>
-            <a href="#" class="footer-link">Calling us</a>
-        </div>
-
-        <script src="JS/filter.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        <script src="../JS/slidedown.js"></script>
+        <script src="../JS/filter.js"></script>
         <script src="JS/3d.js"></script>
-        <script>
-            let overlay = document.getElementsByClassName("overlay");
-            console.log(overlay)
-
-            function on() {
-                document.getElementsByClassName("overlay").style.display = "block";
-            }
-
-            function off() {
-                document.getElementsByClassName("overlay").style.display = "none";
-            } 
-        </script>
+       
 </body>
 
 </html>
