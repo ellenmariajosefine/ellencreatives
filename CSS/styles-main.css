@@ -1,3 +1,5 @@
+@media screen and (min-width: 1025px) {
+
 * {
     box-sizing: border-box;
 }
@@ -1393,4 +1395,6 @@ select:-webkit-autofill:focus {
     border-bottom: 2px white solid;
   -webkit-text-fill-color: white;
   transition: background-color 5000s ease-in-out 0s;
+}
+
 }
