@@ -3,7 +3,8 @@
 filterObjects("all")
 function filterObjects(c) {
   let x, i;
-  x = document.getElementsByClassName("outer-case-boxes");
+  x = document.querySelectorAll(".box");
+  console.log(x);
   if (c == "all") c = "";
   for (i = 0; i < x.length; i++) {
     removeClass(x[i], "show");
@@ -32,12 +33,13 @@ function removeClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-let btnContainer = document.getElementById("filters");
-let btns = btnContainer.getElementsByClassName("filter-btn");
+let btnContainer = document.querySelector("#filters");
+console.log(btnContainer)
+let btns = btnContainer.querySelectorAll(".filter-btn");
 console.log(btns)
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener("click", function(){
-    let current = document.getElementsByClassName("active");
+    let current = document.querySelectorAll(".active");
     current[0].className = current[0].className.replace(" active", "");
     this.className += " active";
   });
