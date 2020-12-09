@@ -6,6 +6,9 @@ contactForm.addEventListener('submit', function (evt) {
     let inputEmail      = document.querySelector('#inputEmail');
     let inputPhone      = document.querySelector('#inputPhone');
     let textArea        = document.querySelector('#inputDescr');
+    let allFields       = document.querySelectorAll('.input')
+    console.log(allFields);
+    let i;
 
     if (ifStringEmpty(inputName, inputEmail, inputPhone, textArea)) {
         alert(
@@ -34,7 +37,7 @@ It helps if we know what you need help with... 🥸 Please write something in th
         return input.value.trim() === '';
     }
 
-    if  (ifStringEmpty(input) === '') {
+    if  (allFields[i] !== '') {
         alert("Woho! Your message has been sent to us 🥳");
     }
     else {
