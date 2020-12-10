@@ -745,9 +745,9 @@ button {
     position: relative;
 }
 
-#filters {
+.filters {
     height: 100px;
-    width: 70vw;
+    width: 90vw;
     margin: 0px auto;
     padding: 24px 100px;
     display: flex;

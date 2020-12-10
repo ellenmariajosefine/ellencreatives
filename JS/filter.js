@@ -33,7 +33,7 @@ function removeClass(element, name) {
   element.className = arr1.join(" ");
 }
 
-let btnContainer = document.querySelector("#filters");
+let btnContainer = document.querySelector(".filters");
 console.log(btnContainer)
 let btns = btnContainer.querySelectorAll(".filter-btn");
 console.log(btns)

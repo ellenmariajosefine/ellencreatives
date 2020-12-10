@@ -25,8 +25,8 @@
 </head>
 
 <body id="cases-body">
-    <!-- WEB HEADER YELLOW --> 
-    <header class="header-container">
+    <!-- WEB HEADER YELLOW -->
+    <header class="header-container hide-mobile">
         <nav class="nav-wrapper">
             <a href="index.html" id="wordmarkLink"><img src="IMG/logo-yb.png" alt="Ellen Creatives Logotype"
                     id="nav-wordmark"></a>
@@ -61,11 +61,12 @@
         </nav>
     </div>
 
-    <div class="cases-main">
+    <!-- WEB CASES -->
+    <div class="cases-main hide-mobile">
         <div class="filters-section">
             <div id="slidedown-btn"><img src="IMG/Icons-elements/filter128x128-White.png" alt=""></div>
             <div class="filters-slidedown">
-                <div id="filters">
+                <div class="filters">
                     <button class="filter-btn active" onclick="filterObjects('all')">See all</button>
                     <button class="filter-btn" onclick="filterObjects('uxGroup')">UX & Analytics</button>
                     <button class="filter-btn" onclick="filterObjects('uiGroup')">Responsive UI</button>
@@ -316,21 +317,283 @@
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
+    </div>
 
-        <!-- WEB FOOTER - YELLOW -->
-        <div class="contact-footer-plain">
-            <div class="footer-title-inverted">Us,</div>
-            <a href="#" class="footer-link-inverted">Influencing</a>
-            <a href="#" class="footer-link-inverted">Being Pros'</a>
-            <div class="footer-title-inverted">You,</div>
-            <a href="#" class="footer-link-inverted">Sending us a fan-mail</a>
-            <a href="#" class="footer-link-inverted">Calling us</a>
+
+<!-- MOBILE CASES-->
+
+    <div class="cases-main-mobile show-mobile">
+        <div class="filters-section-mobile">
+            <div id="slidedown-btn-mobile"><img src="IMG/Icons-elements/filter128x128-White.png" alt=""></div>
+            <div class="filters-slidedown-mobile">
+                <div id="filters">
+                    <button class="filter-btn active" onclick="filterObjects('all')">See all</button>
+                    <button class="filter-btn" onclick="filterObjects('uxGroup')">UX & Analytics</button>
+                    <button class="filter-btn" onclick="filterObjects('uiGroup')">Responsive UI</button>
+                    <button class="filter-btn" onclick="filterObjects('devGroup')">Front-End</button>
+                </div>
+            </div>
+
+            <div class="cases-section-mobile">
+                <a href="/Users/ellenekloof/Google Drive/👩🏽‍💻 Arbete/CM Educations/ellencreatives-main/case-Urban.html"
+                    class="link-to-case">
+                    <div class="box uiGroup">
+                        <div class="outer-case-boxes-mobile" id="case-1">
+                            <!-- <h1 class="case-no">01</h1> -->
+                            <div class="img-case-box-mobile">
+                                <img src="IMG/Cases-thumbnails/Mindster-highlight.png" alt="" class="h-img">
+                            </div>
+                            <div class="text-case-box-mobile">
+                                <div class="client-case-box-mobile">
+                                    <div class="case-thumb-title overline">CLIENT</div>
+                                    <p class="case-thumb-text big-subtitle">Mindster</p>
+                                </div>
+                                <div class="project-case-box-mobile">
+                                    <div class="case-thumb-title overline">PROJECT</div>
+                                    <p class="case-thumb-text big-subtitle">UI</p>
+                                </div>
+                            </div>
+                        </div>
+                </a>
+            </div>
+
+            <div class="box uxGroup uiGroup">
+                <a href="/Users/ellenekloof/Google Drive/👩🏽‍💻 Arbete/CM Educations/ellencreatives-main/case-Urban.html"
+                    class="link-to-case">
+                    <div class="outer-case-boxes-mobile" id="case-2">
+                        <!-- <h1 class="case-no">02</h1> -->
+                        <div class="img-case-box-mobile">
+                            <img src="IMG/Cases-thumbnails/Urban-highlight.png" alt="" class="w-img">
+                        </div>
+                        <div class="text-case-box-mobile">
+                            <div class="client-case-box-mobile">
+                                <div class="case-thumb-title overline">CLIENT</div>
+                                <p class="case-thumb-text big-subtitle">Urban</p>
+                            </div>
+                            <div class="project-case-box-mobile">
+                                <div class="case-thumb-title overline">PROJECT</div>
+                                <p class="case-thumb-text big-subtitle">UI UX</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box devGroup">
+                <a href="/Users/ellenekloof/Google Drive/👩🏽‍💻 Arbete/CM Educations/ellencreatives-main/case-Urban.html"
+                    class="link-to-case">
+                    <div class="outer-case-boxes-mobile" id="case-3">
+                        <!-- <h1 class="case-no">03</h1> -->
+                        <div class="img-case-box-mobile">
+                            <img src="IMG/Cases-thumbnails/Viva-highlight.png" alt="" class="w-img">
+                        </div>
+                        <div class="text-case-box-mobile">
+                            <div class="client-case-box-mobile">
+                                <div class="case-thumb-title overline">CLIENT</div>
+                                <p class="case-thumb-text big-subtitle">Viva</p>
+                            </div>
+                            <div class="project-case-box-mobile">
+                                <div class="case-thumb-title overline">PROJECT</div>
+                                <p class="case-thumb-text big-subtitle">F-E</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box uiGroup">
+                <a href="/Users/ellenekloof/Google Drive/👩🏽‍💻 Arbete/CM Educations/ellencreatives-main/case-Urban.html"
+                    class="link-to-case">
+                    <div class="outer-case-boxes-mobile" id="case-4">
+                        <!-- <h1 class="case-no">04</h1> -->
+                        <div class="img-case-box-mobile">
+                            <img src="IMG/Cases-thumbnails/Makeup-factory-highlight.png" alt="" class="h-img">
+                        </div>
+                        <div class="text-case-box-mobile">
+                            <div class="client-case-box-mobile">
+                                <div class="case-thumb-title overline">CLIENT</div>
+                                <p class="case-thumb-text big-subtitle">MUF</p>
+                            </div>
+                            <div class="project-case-box-mobile">
+                                <div class="case-thumb-title overline">PROJECT</div>
+                                <p class="case-thumb-text big-subtitle">UI</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box uiGroup uxGroup devGroup">
+                <a href="/Users/ellenekloof/Google Drive/👩🏽‍💻 Arbete/CM Educations/ellencreatives-main/case-Urban.html"
+                    class="link-to-case">
+                    <div class="outer-case-boxes-mobile" id="case-5">
+                        <!-- <h1 class="case-no">05</h1> -->
+                        <div class="img-case-box-mobile">
+                            <img src="IMG/Cases-thumbnails/LuN-highlight.png" alt="" class="w-img">
+                        </div>
+                        <div class="text-case-box-mobile">
+                            <div class="client-case-box-mobile">
+                                <div class="case-thumb-title overline">CLIENT</div>
+                                <p class="case-thumb-text big-subtitle">Light Up North</p>
+                            </div>
+                            <div class="project-case-box-mobile">
+                                <div class="case-thumb-title overline">PROJECT</div>
+                                <p class="case-thumb-text big-subtitle">UI UX FE</p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="box uiGroup uxGroup devGroup">
+                <div class="outer-case-boxes-mobile" id="case-6">
+                    <!-- <h1 class="case-no">01</h1> -->
+                    <div class="img-case-box-mobile">
+                        <img src="IMG/Cases-thumbnails/Holofit.png" alt="" class="h-img">
+                    </div>
+                    <div class="text-case-box-mobile">
+                        <div class="client-case-box-mobile">
+                            <div class="case-thumb-title overline">CLIENT</div>
+                            <p class="case-thumb-text big-subtitle">Holofit</p>
+                        </div>
+                        <div class="project-case-box-mobile">
+                            <div class="case-thumb-title overline">PROJECT</div>
+                            <p class="case-thumb-text big-subtitle">UI UX FE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box uxGroup">
+                <div class="outer-case-boxes-mobile" id="case-7">
+                    <!-- <h1 class="case-no">02</h1> -->
+                    <div class="img-case-box-mobile">
+                        <img src="IMG/Cases-thumbnails/CSN-highlight.png" alt="" class="h-img">
+                    </div>
+                    <div class="text-case-box-mobile">
+                        <div class="client-case-box-mobile">
+                            <div class="case-thumb-title overline">CLIENT</div>
+                            <p class="case-thumb-text big-subtitle">CSN</p>
+                        </div>
+                        <div class="project-case-box-mobile">
+                            <div class="case-thumb-title overline">PROJECT</div>
+                            <p class="case-thumb-text big-subtitle">UX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box uiGroup devGroup">
+                <div class="outer-case-boxes-mobile" id="case-8">
+                    <!-- <h1 class="case-no">03</h1> -->
+                    <div class="img-case-box-mobile">
+                        <img src="IMG/Cases-thumbnails/Urban-Urban_highlight.png" alt="" class="w-img">
+                    </div>
+                    <div class="text-case-box-mobile">
+                        <div class="client-case-box-mobile">
+                            <div class="case-thumb-title overline">CLIENT</div>
+                            <p class="case-thumb-text big-subtitle">Urban</p>
+                        </div>
+                        <div class="project-case-box-mobile">
+                            <div class="case-thumb-title overline">PROJECT</div>
+                            <p class="case-thumb-text big-subtitle">UI FE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box uiGroup uxGroup">
+                <div class="outer-case-boxes-mobile" id="case-9">
+                    <!-- <h1 class="case-no">04</h1> -->
+                    <div class="img-case-box-mobile">
+                        <img src="IMG/Cases-thumbnails/Viva-Viva-highlight.png" alt="" class="w-img">
+                    </div>
+                    <div class="text-case-box-mobile">
+                        <div class="client-case-box-mobile">
+                            <div class="case-thumb-title overline">CLIENT</div>
+                            <p class="case-thumb-text big-subtitle">Viva</p>
+                        </div>
+                        <div class="project-case-box-mobile">
+                            <div class="case-thumb-title overline">PROJECT</div>
+                            <p class="case-thumb-text big-subtitle">UI UX</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box uiGroup">
+                <div class="outer-case-boxes-mobile" id="case-10">
+                    <!-- <h1 class="case-no">05</h1> -->
+                    <div class="img-case-box-mobile">
+                        <img src="IMG/Cases-thumbnails/Holofit2.png" alt="" class="h-img">
+                    </div>
+                    <div class="text-case-box-mobile">
+                        <div class="client-case-box-mobile">
+                            <div class="case-thumb-title overline">CLIENT</div>
+                            <p class="case-thumb-text big-subtitle">Holofit</p>
+                        </div>
+                        <div class="project-case-box-mobile">
+                            <div class="case-thumb-title overline">PROJECT</div>
+                            <p class="case-thumb-text big-subtitle">UI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box uiGroup">
+                <div class="outer-case-boxes-mobile" id="case-11">
+                    <!-- <h1 class="case-no">04</h1> -->
+                    <div class="img-case-box-mobile">
+                        <img src="IMG/Cases-thumbnails/Mindmapper1.png" alt="" class="h-img">
+                    </div>
+                    <div class="text-case-box-mobile">
+                        <div class="client-case-box-mobile">
+                            <div class="case-thumb-title overline">CLIENT</div>
+                            <p class="case-thumb-text big-subtitle">Mindmapper</p>
+                        </div>
+                        <div class="project-case-box-mobile">
+                            <div class="case-thumb-title overline">PROJECT</div>
+                            <p class="case-thumb-text big-subtitle">UI</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box uiGroup devGroup">
+                <div class="outer-case-boxes-mobile" id="case-12">
+                    <!-- <h1 class="case-no">05</h1> -->
+                    <div class="img-case-box-mobile">
+                        <img src="IMG/Cases-thumbnails/Mindmapper2.png" alt="" class="h-img">
+                    </div>
+                    <div class="text-case-box-mobile">
+                        <div class="client-case-box-mobile">
+                            <div class="case-thumb-title overline">CLIENT</div>
+                            <p class="case-thumb-text big-subtitle">Philips</p>
+                        </div>
+                        <div class="project-case-box-mobile">
+                            <div class="case-thumb-title overline">PROJECT</div>
+                            <p class="case-thumb-text big-subtitle">UI FE</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+    </div>
+</div>
+    <!-- WEB FOOTER - YELLOW -->
+    <div class="contact-footer-plain hide-mobile">
+        <div class="footer-title-inverted">Us,</div>
+        <a href="#" class="footer-link-inverted">Influencing</a>
+        <a href="#" class="footer-link-inverted">Being Pros'</a>
+        <div class="footer-title-inverted">You,</div>
+        <a href="#" class="footer-link-inverted">Sending us a fan-mail</a>
+        <a href="#" class="footer-link-inverted">Calling us</a>
+    </div>
 
-        <!-- MOBILE FOOTER -->
+    <!-- MOBILE FOOTER -->
     <section class="show-mobile">
         <div class="contact-footer-mobile">
             <div class="footer-wrapper">
@@ -349,10 +612,9 @@
         </div>
     </section>
 
-        <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
-        <script src="JS/slidedown.js"></script>
-        <script src="JS/filter.js"></script>
-        <script src="JS/3d.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="JS/slidedown.js"></script>
+    <script src="JS/filter.js"></script>
 
 </body>
 
