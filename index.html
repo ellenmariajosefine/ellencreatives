@@ -17,24 +17,16 @@
     <!-- Stylesheet: Typography -->
     <link rel="stylesheet" href="CSS/fonts.css">
 
-    <!-- Stylesheet: MediaQuery Phone -->
-    <link rel="stylesheet" href="">
-
-    <!-- Stylesheet: MediaQuery tablet -->
-    <link rel="stylesheet" href="CSS/styles-tablet.css">
-
     <!-- Stylesheet: Small Desktops -->
     <link rel="stylesheet" href="CSS/styles-main.css">
-    
-    
-    
 
-
+    <!-- Stylesheet: MediaQueries -->
+    <link rel="stylesheet" href="CSS/styles-mediaqueries.css">
 </head>
 
 <body id="body-home">
-
-    <header class="header-container">
+<!-- WEB HEADER-->
+    <header class="header-container hide-mobile">
         <nav class="nav-wrapper">
             <a href="index.html" id="wordmarkLink"><img class="logotype" src="IMG/logo-bw.png"
                     alt="Ellen Creatives Logotype" id="nav-wordmark"></a>
@@ -45,9 +37,43 @@
         </nav>
     </header>
 
-    <section>
-        <div class="hero-content bg-yellow">
-            <img class="hero-img" src="IMG/heroes2.png" alt="">
+<!-- MOBILE HEADER-->
+<div class="mobile-header show-mobile">
+<nav role="navigation">
+    <div id="menuToggle">
+      <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+    <ul id="menu">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="index.html#servicesAnchor">Services</a></li>
+      <li><a class="nav-link" href="Cases-overview.html">Cases</a></li>
+      <li><a class="nav-link" href="about.html#contactAnchor">Let's Chat</a></li>
+    </ul>
+   </div>
+  </nav>
+</div>
+
+    <!--  MOBILE HERO  -->
+    <section class="show-mobile">
+        <div class="hero-mobile">
+            <img class="hero-img" src="IMG/heroes5.png" alt="">
+            <h1 class="white-font">Not all heroes wear capes, <br>but we do!</h1>
+            <p class="white-font">We come to rescue, to make your UI & Front-End dreams come true.<br> How can we
+                help you?</p>
+            <div class="btn-floater">
+                <button href="about.html#contactAnchor" class="CTA">Get rescued</button>
+                <button href="cases-overview.html" class="btn">See our work</button>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!--  WEB HERO  -->
+    <section class="bg-yellow hide-mobile">
+        <div class="hero-content">
+            <img class="hero-img" src="IMG/heroes5.png" alt="">
             <div class="flex-col-flex-start" id="hero-text-content">
                 <h1 class="white-font">Not all heroes wear capes, <br>but we do!</h1>
                 <p class="white-font">We come to rescue, to make your UI & Front-End dreams come true.<br> How can we
@@ -61,9 +87,11 @@
     </section>
 
 
-    <section>
+
+
+    <section class="bg-petrol">
         <a name="servicesAnchor"></a>
-        <div class="services-section bg-petrol full-screen">
+        <div class="services-section full-screen">
             <h2 class="white-font">We are heroes with<br>
                 Super powers in UI & Front-End</h2>
             <div class="services">
@@ -99,7 +127,9 @@
         </div>
     </section>
 
-    <section class="swipe-right">
+
+    <!--  WEB SLIDER  -->
+    <section class="swipe-right hide-mobile">
         <div class="slider-container">
 
             <!-- First slide-->
@@ -107,12 +137,17 @@
                 <div class="left-container">
                     <h2>Urban - For locals, by locals</h2>
                     <p class="bold-p">Ever felt lika a stranger in your own town? We have for sure! With Urban, you get
-                        top recommendations from fellow locals. <br><br>Never miss out on the secret gems in your city!</p>
+                        top recommendations from fellow locals. <br><br>Never miss out on the secret gems in your city!
+                    </p>
                     <div class="btn-floater-left">
                         <button href="case-urban.html" class="CTA">Have a look</button>
                         <button href="about.html#contactAnchor" class="btn">Get rescued</button>
                     </div>
-                    <div class="scrollMe">
+                    <div class="scrollMe show-tablet">
+                        <p id="scrollMeLabel">Swipe right to see more</p>
+                        <img class="arrow-right" src="IMG/Icons-elements/arrow-white-right-thicker@2x.png" alt="">
+                    </div>
+                    <div class="scrollMe hide-device">
                         <p id="scrollMeLabel">Swipe right to see more</p>
                         <img class="arrow-right" src="IMG/Icons-elements/arrow-white-right-thicker@2x.png" alt="">
                     </div>
@@ -134,7 +169,11 @@
                         <button href="case-urban" class="btn left-btn">Have a look</button>
                         <button href="about.html#contactAnchor" class="btn-white">Get rescued</button>
                     </div>
-                    <div class="scrollMe">
+                    <div class="scrollMe show-tablet">
+                        <p id="scrollMeLabel">Swipe right to see more</p>
+                        <img class="arrow-right" src="IMG/Icons-elements/arrow-white-right-thicker@2x.png" alt="">
+                    </div>
+                    <div class="scrollMe hide-device">
                         <p id="scrollMeLabel">Swipe right to see more</p>
                         <img class="arrow-right" src="IMG/Icons-elements/arrow-white-right-thicker@2x.png" alt="">
                     </div>
@@ -165,8 +204,69 @@
         </div>
     </section>
 
+
+    <!--  MOBILE SLIDER  -->
+    <section class="slider-mobile show-mobile">
+
+        <!-- First slide-->
+        <div class="filler bg-yellow">
+            <div class="slider-container-mobile slider-yellow">
+                <img src="IMG/Cases-thumbnails/Urban-highlight.png" alt="" class="case-laptop">
+                <h2 class="white-font">Urban - For locals, by locals</h2>
+                <p class="white-font">
+                    Ever felt lika a stranger in your own town? We have for sure! With Urban, you get
+                    top recommendations from fellow locals. <br><br>Never miss out on the secret gems <br>in your city!
+                </p>
+                <div class="btn-floater-left">
+                    <button href="case-urban.html" class="btn">Have a look</button>
+                    <button href="about.html#contactAnchor" class="btn-white">Get rescued</button>
+                </div>
+                <div class="scrollMe-mobile">
+                    <p class="white-font" id="scrollMeLabel">Swipe right to see more</p>
+                    <img class="arrow-right" src="IMG/Icons-elements/arrow-white-right-thicker@2x.png" alt="">
+                </div>
+            </div>
+        </div>
+        <!-- Second slide-->
+        <div class="filler bg-petrol">
+            <div class="slider-container-mobile slider-petrol">
+                <img src="IMG/Cases-thumbnails/Mindster-highlight.png" alt="" class="case-phone">
+                <h2 class="white-font">Mindster - The journey begins inside</h2>
+                <p class="white-font">
+                    Mindster is an App for mindfulness exercises with an ambition to improve the
+                    mental health and sleeping quality of the users.
+                </p>
+                <div class="btn-floater-left">
+                    <button href="case-urban.html" class="CTA">Have a look</button>
+                    <button href="about.html#contactAnchor" class="btn">Get rescued</button>
+                </div>
+                <div class="scrollMe-mobile">
+                    <p class="white-font" id="scrollMeLabel">Swipe right to see more</p>
+                    <img class="arrow-right" src="IMG/Icons-elements/arrow-white-right-thicker@2x.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <!-- Third slide-->
+        <div class="filler bg-yellow">
+            <div class="slider-container-mobile slider-yellow">
+                <img src="IMG/Cases-thumbnails/Viva-highlight.png" alt="" class="case-laptop">
+                <h2 class="white-font">Urban - For locals, by locals</h2>
+                <p class="white-font">
+                    Ever felt lika a stranger in your own town? We have for sure! With Urban, you get
+                    top recommendations from fellow locals. <br><br>Never miss out on the secret gems <br>in your city!
+                </p>
+                <div class="btn-floater-left">
+                    <button href="case-urban.html" class="btn">Have a look</button>
+                    <button href="about.html#contactAnchor" class="btn-white">Get rescued</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  WEB ABOUT-->
     <section>
-        <div class="about-section full-screen bg-petrol">
+        <div class="about-section full-screen bg-petrol hide-mobile">
             <div class="left-container-about">
                 <img src="IMG/heroes3.png" alt="" class="about-img">
             </div>
@@ -180,18 +280,56 @@
         </div>
     </section>
 
-    <div class="contact-footer">
-        <div class="scrollMe">
+    <!-- MOBILE ABOUT -->
+    <section class="show-mobile">
+        <div class="about-mobile">
+            <img class="hero-img" src="IMG/heroes3.png" alt="">
+            <h4 class="white-font">We might not save kittens from trees, but we do something even more heroic..</h4>
+            <p class="white-font">Our track record for saved kittens might not be so high, but our record
+                for saving clients suffering from UI & Front-End headaches is definately one for the books. </p>
+            <button href="cases-overview.html" class="btn">Read more</button>
+        </div>
+        </div>
+    </section>
+
+<!-- MOBILE FOOTER -->
+    <section class="show-mobile">
+    <div class="contact-footer-mobile">
+        <div class="footer-wrapper">
+            <div class="footer-1">
+                <div class="footer-title">Us,</div>
+                <a href="#" class="footer-link">Influencing</a>
+                <a href="#" class="footer-link">Being Pros'</a>
+            </div>
+            <div class="footer-2">
+                <div class="footer-title">You,</div>
+                <a href="mailto:ellenekloofdesign@gmail.com" target="_blank" class="footer-link">Sending us a
+                    fan-mail</a>
+                <a href="tel:+46707509144" class="footer-link">Calling us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- WEB FOOTER -->
+    <div class="contact-footer hide-mobile">
+        <div class="scrollMe" id="scrollMeFooter">
             <img class="arrow-down" src="IMG/Icons-elements/arrow-white-down-thicker@2x.png" alt="">
             <p id="scrollMeLabel-down">Swipe down to continue</p>
         </div>
         <div class="footer-wrapper">
-            <div class="footer-title">Us,</div>
-            <a href="#" class="footer-link">Influencing</a>
-            <a href="#" class="footer-link">Being Pros'</a>
-            <div class="footer-title">You,</div>
-            <a href="mailto:ellenekloofdesign@gmail.com" target="_blank" class="footer-link">Sending us a fan-mail</a>
-            <a href="tel:+46707509144" class="footer-link">Calling us</a>
+            <div class="footer-1">
+                <div class="footer-title">Us,</div>
+                <a href="#" class="footer-link">Influencing</a>
+                <a href="#" class="footer-link">Being Pros'</a>
+            </div>
+            <div class="footer-2">
+                <div class="footer-title">You,</div>
+                <a href="mailto:ellenekloofdesign@gmail.com" target="_blank" class="footer-link">Sending us a
+                    fan-mail</a>
+                <a href="tel:+46707509144" class="footer-link">Calling us</a>
+            </div>
         </div>
     </div>
 
