@@ -1982,15 +1982,16 @@
     }
     
     #filters {
-        height: 100px;
-        width: 70vw;
+        height: auto;
+        width: 375px;
         margin: 0px auto;
         padding: 24px 100px;
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: column wrap;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         display: none;
+        border-bottom: 1px solid #EBEBEB;
     }
     
     #slidedown-btn-mobile {
@@ -2007,16 +2008,16 @@
         align-items: center;
         margin-left: 70px;
         position: relative;
-        top: 36px;
-        left: -30px;
-        z-index:977;
+        top: 80px;
+        left: -50px;
+        z-index:800;
     }
     
-    #slidedown-btn:hover {
+    #slidedown-btn-mobile:hover {
         background-color: var(--yellow-highlight);
     }
     
-    #slidedown-btn img {
+    #slidedown-btn-mobile img {
         background-color: var(--transparent);
         border: none;
         outline: none;
@@ -2026,15 +2027,16 @@
     }
     
     .filter-btn {
-        padding: 12px 32px;
+        width: 50vw;
+        padding: 8px 24px;
         border-radius: 40px;
         font-family: "Open Sans", sans-serif;
         font-weight: bold;
-        font-size: 0.9rem;
+        font-size: 0.8rem;
         color: var(--petrol);
         background-color: var(--white);
         border: 1px solid var(--petrol);
-        margin: 0px 16px;
+        margin: 8px auto;
         cursor: pointer;
         outline: none;
     }
