@@ -35,7 +35,8 @@
 </head>
 
 <body id="body-caseOverview">
-    <header class="header-container">
+    <!-- WEB HEADER-->
+    <header class="header-container hide-mobile">
         <nav class="nav-wrapper">
             <a href="index.html" id="wordmarkLink"><img class="logotype" src="IMG/logo-bw.png"
                     alt="Ellen Creatives Logotype" id="nav-wordmark"></a>
@@ -45,6 +46,31 @@
             <a href="about.html#contactAnchor" class="nav-link">Let's Chat</a>
         </nav>
     </header>
+
+    <!-- MOBILE HEADER-->
+    <div class="mobile-header show-mobile">
+        <nav role="navigation">
+
+            <div id="menuToggle">
+                <input type="checkbox" />
+                <div class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul id="menu">
+                    <li><a class="nav-link" href="index.html">Home</a></li>
+                    <li><a class="nav-link" href="index.html#servicesAnchor">Services</a></li>
+                    <li><a class="nav-link" href="Cases-overview.html">Cases</a></li>
+                    <li><a class="nav-link" href="about.html#contactAnchor">Let's Chat</a></li>
+                </ul>
+            </div>
+            <a href="index.html" id="logo-container">
+                <img class="logotype" src="IMG/logo-bw.png" alt="Ellen Creatives Logotype">
+            </a>
+        </nav>
+    </div>
+
     <section>
         <div class="case-hero-section">
             <div class="case-hero">
@@ -184,20 +210,46 @@
             </div>
         </div>
     </section>
-    <div class="contact-footer">
-        <div class="scrollMe">
+
+    <!-- WEB FOOTER -->
+    <div class="contact-footer hide-mobile">
+        <div class="scrollMe" id="scrollMeFooter">
             <img class="arrow-down" src="IMG/Icons-elements/arrow-white-down-thicker@2x.png" alt="">
             <p id="scrollMeLabel-down">Swipe down to continue</p>
         </div>
         <div class="footer-wrapper">
-            <div class="footer-title">Us,</div>
-            <a href="#" class="footer-link">Influencing</a>
-            <a href="#" class="footer-link">Being Pros'</a>
-            <div class="footer-title">You,</div>
-            <a href="#" class="footer-link">Sending us a fan-mail</a>
-            <a href="#" class="footer-link">Calling us</a>
+            <div class="footer-1">
+                <div class="footer-title">Us,</div>
+                <a href="#" class="footer-link">Influencing</a>
+                <a href="#" class="footer-link">Being Pros'</a>
+            </div>
+            <div class="footer-2">
+                <div class="footer-title">You,</div>
+                <a href="mailto:ellenekloofdesign@gmail.com" target="_blank" class="footer-link">Sending us a
+                    fan-mail</a>
+                <a href="tel:+46707509144" class="footer-link">Calling us</a>
+            </div>
         </div>
     </div>
+
+    <!-- MOBILE FOOTER -->
+    <section class="show-mobile">
+        <div class="contact-footer-mobile">
+            <div class="footer-wrapper">
+                <div class="footer-1">
+                    <div class="footer-title">Us,</div>
+                    <a href="#" class="footer-link">Influencing</a>
+                    <a href="#" class="footer-link">Being Pros'</a>
+                </div>
+                <div class="footer-2">
+                    <div class="footer-title">You,</div>
+                    <a href="mailto:ellenekloofdesign@gmail.com" target="_blank" class="footer-link">Sending us a
+                        fan-mail</a>
+                    <a href="tel:+46707509144" class="footer-link">Calling us</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script src="JS/script.js"></script>
     <script src="JS/scrollMeCase.js"></script>
