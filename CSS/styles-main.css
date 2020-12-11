@@ -59,6 +59,14 @@ section {
     display: none;
 }
 
+.show-tablet-portrait {
+    display: none;
+}
+
+.hide-tablet-portrait {
+    display: initial;
+}
+
 /*  COLOR STYLING      COLOR STYLING      COLOR STYLING     COLOR STYLING     COLOR STYLING     COLOR STYLING    COLOR STYLING */
 
 :root {

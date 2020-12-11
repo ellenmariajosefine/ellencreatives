@@ -1237,10 +1237,22 @@
         -webkit-text-fill-color: white;
         transition: background-color 5000s ease-in-out 0s;
     }
+
+    #about-img-1 {
+        width: 500px;
+    }
 }
 
 @media only screen and (max-device-width: 960px) {
-.btn, .CTA, .btn-white {
+.show-tablet-portrait {
+    display: initial;
+}
+
+.hide-tablet-portrait {
+    display: none;
+}
+
+    .btn, .CTA, .btn-white {
         padding: 12px 32px;
         border-radius: 40px;
         font-family: "Open Sans", sans-serif;
@@ -1679,6 +1691,78 @@
     .right-container .btn-floater-left {
         margin: 32px 0px;
     }
+
+    #about-body section {
+        width: auto;
+    }
+    #about-body .left-container-about {
+        width: 45vw;
+    }
+    #about-body .right-container-about {
+        width: 55vw;
+        height: 600px;
+        justify-content: center;
+    }
+    #about-img-1 {
+        height: 200px;
+        width: auto;
+    }
+
+    #about-body .right-container-about .about-title,
+    #about-body .right-container-about .about-p {
+        text-align: left;
+    }
+
+    .case-highlight-section-mobile {
+        width: 100vw;
+        height: auto;
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    .left-container-mobile {
+        width: 55vw;
+        height: 700px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+        padding-left: 50px;
+    }
+    .right-container-mobile {
+        width: 45vw;
+        height: 700px;
+    }
+
+    #about-img-2 {
+        width: 40vw;
+        height: auto;
+    }
+
+    .slider-container-mobile {
+        height: auto;
+    }
+
+    .form-container .left-container {
+        width: 20vw;
+    }
+    .form-container .right-container {
+        width: 80vw;
+        background-color: rgba(255, 192, 98,0.5);
+    }
+
+    .form-field input, 
+    .form-field textarea {
+        width: 60vw;
+        border-bottom: 2px solid white;
+    }
+
+    .checkmark {
+        border: 2px  solid white;
+    }
+    
 }
 
 @media only screen and (max-device-width: 576px) {
